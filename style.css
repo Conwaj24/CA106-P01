@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: aquamarine;
+  background-image: linear-gradient(to right, black, grey);
+  border-bottom: 3% solid red;
+  padding: 1%;
+}
+h2 {
+  color: forestgreen;
+  width: 30%;
+  margin: 15px, 0px, 5px, 0px;
+  border-bottom: 2px solid red;
+  padding: 1%;
+}
+h3 {
+  color: aqua;
+  border-bottom: 1% solid red;
+  padding: 1%;
+  text-indent: 2%;
+}
+p {
+  color: white;
+  padding: 1%;
+  text-indent: 1%;
+}

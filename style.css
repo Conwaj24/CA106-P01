@@ -20,6 +20,11 @@ h3 {
   padding: 1%;
   text-indent: 2%;
 }
+
+a {
+  color: forestgreen;
+}
+
 p {
   color: white;
   padding: 1%;
@@ -31,5 +36,22 @@ li {
 i {
   color: white;
 }
+cite{
+  color:white;
+  padding-left:5%;
+  text-indent: 3%;
+}
 
 /* Classes */
+.nav {
+  float: left;
+  padding: 1%;
+  background-color: #111111;
+  margin-bottom: 3%;
+  text-align: center;
+  width: 100%;
+}.content {
+  background-color: #111111;
+  padding: 1%;
+  margin: 1%;
+}

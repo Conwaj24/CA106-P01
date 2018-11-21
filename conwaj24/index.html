@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A website</title>
+    <link rel="stylesheet" href="layout.css" /> </head>
+
+<body>
+    <main>
+        <header class="page-header">  <!--headings define the structure of the page to search engines-->
+            <div class="header-content">  <!-- A div is the most arbitrary or fundemental html container as it has no predefined meaning, it is used for every purpose that doesn't have a default container-->
+                <h1>Conwaj24</h1>
+                <p>CA106 Assignment, 2018-11-13 </p>
+            </div>
+            <nav class="page-nav">
+                <a href="#about"><div class="button">   About Me</div></a>
+                <a href="#work"><div class="button">    Work Experience</div></a>
+                <a href="#images"><div class="button">  Image Gallery</div></a>
+                <a onclick="toggle('contact')"><div class="button"> Contact Me</div></a>
+            </nav>
+        </header>
+        <div class="respond-conatainer">
+            <div class="copy" role="responsive">
+                <section id="about" class="about-me container">  <!--this section is used to define different logical areas of the page, generally things that can be given titles -->
+                    <div class="container-content">
+                        <h2>About Me</h2>
+                        <div class="content">
+My name is Jordan Conway McLaughlin and I find writing about myself to be a far less interesting challenge then making and appealing web-page. As such, the majority of content on this page will be placeholder text and images for demonstration purposes.
+                        
+<br>All images in the image gallery are my own intellectual property in one way or another. The site uses a script which does not belong to me but is free to use as long as the appropriate comment is included. All other scripts belong to me.
+
+<br>The site is designed to be responsive so feel free to resize the windows as you please.
+                        </div>
+                    </div>
+                </section>
+                <section id="work" class="work-experience container">
+                    <div class="container-content">
+                        <h2>Work Experience</h2>
+                        <div class="content">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum est vel risus pretium, quis pretium mauris semper. Fusce ac commodo velit. Nunc quis ultricies dui. Fusce pulvinar, quam vel fermentum mollis, sapien turpis mattis arcu, vitae lacinia metus est quis nulla. Integer porttitor velit at sem ultricies lobortis. Donec et velit ac augue vulputate tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tellus risus, elementum maximus suscipit id, cursus a tortor. Cras tincidunt pharetra dolor, vulputate egestas nisi dapibus at.
+<br>
+Sed venenatis sed nunc sed fermentum. Phasellus malesuada facilisis magna et congue. Sed vel semper purus. Nulla ornare blandit sapien, quis euismod ipsum tempor et. Vestibulum malesuada sem sit amet nisi egestas lacinia. Morbi non facilisis felis, ut luctus erat. Cras vehicula elementum vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam sollicitudin risus metus, pulvinar varius eros malesuada fermentum. Nunc interdum tempus velit. Mauris ut tempor sem.
+<br>
+Nulla ac viverra neque. Aenean a augue ut mi sagittis ornare sed non sapien. In hac habitasse platea dictumst. Nullam laoreet eros sit amet posuere semper. Aliquam erat volutpat. In condimentum, ante ac mollis finibus, nunc arcu eleifend lorem.
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section id="images" class="image-gallery container" role="responsive" width="50%">
+                <div class="container-content">
+                    <h2>Image Gallery</h2>
+                    <div class="content row">
+                        <div class="column">
+                            <a href="img/A_Meme.jpg"><img src="img/A_Meme.jpg" style="width:100%"></a>
+                            <a href="img/dog&chuck.jpg"><img src="img/dog&chuck.jpg" style="width:100%"></a>
+                            <a href="img/DoodComposite.png"><img src="img/DoodComposite.png" style="width:100%"></a>
+                            <a href="img/Heck.jpg"><img src="img/Heck.jpg" style="width:100%"></a>
+                        </div>
+                        <div class="column">
+                            <a href="img/heythatsme.jpg"><img src="img/heythatsme.jpg" style="width:100%"></a>
+                            <a href="img/crepe.jpg"><img src="img/crepe.jpg" style="width:100%"></a>
+                            <a href="img/doggo.jpg"><img src="img/doggo.jpg" style="width:100%"></a>
+                            <a href="img/cry.jpg"><img src="img/cry.jpg" style="width:100%"></a>
+                        </div>
+                        <div class="column">
+                            <a href="img/lens.jpg"><img src="img/lens.jpg" style="width:100%"></a>
+                            <a href="img/WINE DOG2.png"><img src="img/WINE DOG2.png" style="width:100%"></a>
+                            <a href="img/nani.jpg"><img src="img/nani.jpg" style="width:100%"></a>
+                            <a href="img/nutri.JPG"><img src="img/nutri.JPG" style="width:100%"></a>
+                        </div>
+                        <div class="column">
+                            <a href="img/pipper.JPG"><img src="img/pipper.JPG" style="width:100%"></a>
+                            <a href="img/Render8.png"><img src="img/Render8.png" style="width:100%"></a>
+                            <a href="img/interesting.JPG"><img src="img/interesting.JPG" style="width:100%"></a>
+                            <a href="img/lsv.JPG"><img src="img/lsv.JPG" style="width:100%"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>    
+        <section id="contact" class="contact-me container" style="display: none">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/[your email address goes here]" method="post">
+                        <table>
+                            <tr>
+                                <th><label for="contact-name">Your Name</label></th>
+                                <th><input id="contact-name" type="text" name="contact-name" class="text"></th>
+                            </tr>
+                            <tr>
+                                <th><label for="contact-email">Your email address</label></th>
+                                <th><input id="contact-email" type="email" name="contact-email" class="text"></th>
+                            </tr>
+                            <tr>
+                                <th><label for="contact-phone">Your phone number</label></th>
+                                <th><input id="contact-phone" type="tel" name="contact-phone" class="text"></th> 
+                            </tr>
+                        </table>
+                        <p>
+                           <textarea placeholder="Your Message" id="contact-message" name="contact-message" class="text" cols="30" rows="1" onkeyup="AutoGrowTextArea(this)"></textarea>
+                        </p>
+                        <p><input type="submit" class="button" value="Send" /> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="footer-content">
+                <p> <span class="footer-text">&copy; <a href="dcu.ie/">DCU 2018</a>
+    </span> <span class="footer-separator">&middot;</span> <span class="footer-text">Jordan Conway McLaughlin</span> <span class="footer-separator">&middot;</span> <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span> <span class="footer-text">Lecturer<a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> <span class="footer-separator">&middot;</span> <span class="footer-text">
+     <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a>
+        </span> </p>
+            </div>
+        </footer>
+    </main>
+<script type="text/javascript">
+// Auto-Grow-TextArea script.
+// Script copyright (C) 2011 www.cryer.co.uk.
+// Script is free to use provided this copyright header is included.
+function AutoGrowTextArea(textField){
+  if (textField.clientHeight < textField.scrollHeight){
+    textField.style.height = textField.scrollHeight + "px";
+    if (textField.clientHeight < textField.scrollHeight){
+      textField.style.height = (textField.scrollHeight * 2 - textField.clientHeight) + "px";
+}}}
+function toggle(id) {
+    var x = document.getElementById(id);
+    up = x.style.display === "none";
+    x.style.display = up? "block" : "none";
+    if (x.getAttribute("role") === "responsive")
+        {respond(x, up)}
+
+}
+function respond(elem, up = true, width = true){
+    var x = elem.parentElement.childNodes;
+    val = width? 'width' : 'height';
+    len = (x.length - 1) / 2
+    var set = 100.0 / (len + up) + "%";
+    for (i = 0; i < x.length/2 -1; i++) {
+        j = i * 2 + 1 //gaps between elements are also considered by .childNodes
+        console.log(x[j]);
+        console.log(x[j].getAttribute(val));
+        x[j].setAttribute(val, set);
+        console.log(x[j].getAttribute(val));
+    }
+}
+
+</script>
+</body>
+
+</html>

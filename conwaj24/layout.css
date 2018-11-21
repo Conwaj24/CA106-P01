@@ -1,0 +1,149 @@
+/* These are some suggested groupings for your stylesheet... */
+
+@font-face{
+	font-family: helvetica-neue;
+	src: url(font/HelveticaNeueLt.ttf);
+}
+body{
+	font-size: 18px;
+	margin: 0px;
+	background: #000;
+	background: -webkit-radial-gradient(top left, #222 0%, #000 85%); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(top left, #222 0%, #000 85%); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(top left, #222 0%, #000 85%); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(to bottom right, #222 0%, #000 85%); /* Standard syntax (must be last) */
+	background-image: radial-gradient(circle at 10px 10px, #203035 0px, #000000 1080px);
+	background-attachment:fixed;
+
+	color: rgba(255, 255, 255, 0.8);
+	font-family: helvetica-neue;
+}
+main{
+	font-size: 18px
+}
+p{
+	margin-block-start: .5em;
+	margin-block-end: .5em;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+textarea{
+	resize: none;
+}
+th{
+	text-align: right;
+}
+h1{
+	margin: 5px 0px;
+	width: 250px;
+}
+nav{
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap
+}
+header{
+	height: 100%;
+	display: flex;
+	background: rgba(0, 0, 0, 0.2);
+}
+table{
+	width: 100%;
+}
+div.content{
+	text-align: justify;
+}
+[role="responsive"]{
+	width: 50%;
+	float: left;
+}
+}
+.info{
+	width: 100vw;
+}
+.button{
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	background-color: transparent;
+	padding: 10px 30px;
+	margin: 5px;
+	text-align: center;
+	-webkit-transition: background-color 0.2s, color 0.1s;
+	transition: background-color 0.2s, color 0.1s;
+}
+.button:hover{
+	background-color: #fff;
+	color: #000;
+	-webkit-transition: background-color 0.2s, color 0.1s;
+	transition: background-color 0.2s, color 0.1s;
+}
+.text{
+	color: rgba(255, 255, 255, 0.5);;
+	font-family: inherit;
+	font-size: inherit;
+	text-decoration: none;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+	background-color: transparent;
+	outline: none;
+	width: 100%;
+}
+.image-gallery{
+	display: inline-block;
+}
+#contact{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+	width: 400px;
+	padding: 15px;
+	height: auto;
+	background: rgba(0,0,0,0.8);
+}
+/* gallery style */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    -ms-flex: 23.5%;
+    flex: 23.5%;
+    max-width: 23.5%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+@media screen and (max-width: 1200px) {
+    .column {
+        -ms-flex: 48%;
+        flex: 48%;
+        max-width: 48%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    [role="responsive"]{
+        width: 100%;
+    }
+    .column {
+        -ms-flex: 48%;
+        flex: 48%;
+        max-width: 48%;
+    }
+}

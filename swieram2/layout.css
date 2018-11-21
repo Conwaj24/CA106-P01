@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Jura', sans-serif;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.box {
+	width: 100%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+h1 {
+	font-weight: 400;
+	font-size: 1.9rem;
+	margin-top: 0;
+}
+
+p {
+	margin-top: 0;
+	line-height: 1;
+}
+
+
+.title {
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+
+}
+
+
+@media (min-width:60rem) {
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+
+	.title {
+		font-size: 3.9rem;
+	}
+}
+
+
+.button {
+  display: inline-block;
+	font-size: 1em;
+	font-weight: 800;
+  text-decoration: none;
+  text-transform: lowercase;
+  border-width: 3px;
+  border-style: solid;
+  padding: .7em 1.5em;
+}
+
+.button-accent {
+color: #32CD32;
+border-color: #32CD32;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+	background: #32CD32;
+	color: #232323;
+}
+
+
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 2em;
+}
+
+nav ul {
+	list-style: none;
+}
+
+
+nav li{
+	display: inline-block;
+	margin: .75em;
+}
+
+nav a {
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 1em;
+	color: #FFF;
+}
+
+nav a:hover,
+nav a:focus{
+	color: #DDD;
+}
+
+
+@media (min-width:60rem) {
+		nav {
+			float: left;
+		}
+	}
+
+  .home-page {
+  	background-image: url(img/matrix-2.png);
+  	background-size: cover;
+  	background-position: center;
+  	padding: 10em 0;
+  	color: #FFF;
+  }
+
+  @media (min-width: 60rem) {
+  	.home-page {
+  		height: 100vh;
+  		padding-top: 35vh;
+  	}
+  }
+
+  .content {
+  	background-color: #232323;
+  	width: 100vw;
+		padding: 4em;
+  	outline: 2px solid #006400;
+  	outline-offset: -2.5em;
+  	color: #fff;
+  	position: relative;
+  }
+
+  .content h1 {
+  	color: #006400;
+  	position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	background: #232323;
+		padding: 0 .15em;
+		top: .75em;
+  }
+
+  .content-2 {
+  	background-color: #232323;
+  	width: 100vw;
+		padding: 4em;
+  	outline: 2px solid #006400;
+  	outline-offset: -2.5em;
+  	color: #fff;
+  	position: relative;
+  }
+
+  .content-2 h1 {
+  	color: #006400;
+  	position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	background: #232323;
+		top: .8em;
+  	padding: 0 .15em;
+  }
+
+  .content-3 {
+  	background-color: #232323;
+  	width: 100%;
+		padding: 4em;
+  	outline: 2px solid #006400;
+  	outline-offset: -2.5em;
+  	color: #fff;
+  	position: relative;
+  }
+
+  .content-3 h1 {
+  	color: #006400;
+  	position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	top: .2em;
+  	background: #232323;
+  	padding: 0 .15em;
+  }
+
+
+  @media (min-width: 27rem) {
+  	h1 {
+  		font-size: 2rem;
+  	}
+
+  	.content h1 {
+  		top: .01em;
+  		padding: 0.325em;
+  	}
+
+    .content-2 h1 {
+  		top: .05em;
+  		padding: 0.325em;
+  	}
+
+    .content-3 h1 {
+      top: .05em;
+      padding: 0.325em;
+		}
+	}
+
+  @media (min-width: 60rem) {
+  	h1 {
+  		font-size: 2.7rem;
+  	}
+
+  	.about-me {
+  		background-image: url(img/nowy-sacz-27.jpg);
+  		background-repeat: no-repeat;
+  		padding-bottom: 12em;
+  	}
+
+  	.content {
+  		width: 50%;
+  		padding: 7em;
+  		outline-offset: -3.5em;
+  		top: -5em;
+  		text-align: left;
+  		box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+  	}
+
+  	.content h1 {
+  		top: .7em;
+  		left: 7rem;
+  		transform: translatex(0);
+  	}
+
+    .content-2 {
+      width: 100%;
+      padding: 7em;
+      outline-offset: -3.5em;
+      text-align: left;
+      box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+    }
+
+    .content-2 h1 {
+  		top: .7em;
+  		left: 7rem;
+  		transform: translatex(0);
+  	}
+
+    .content-3 {
+			width: 50vw;
+			padding: 7em;
+			outline-offset: -3.5em;
+			text-align: left;
+			box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+    }
+
+    .content-3 h1 {
+  		top: .7em;
+  		left: 7rem;
+  		transform: translatex(0);
+  	}
+}
+
+  .an-image {
+  	margin: 0;
+  	position: relative;
+  }
+
+  .an-image img {
+  	display: block;
+  }
+
+  .image-caption {
+  	position: absolute;
+  	bottom: 0em;
+		z-index: 100;
+  	right: 0em;
+		left: 0em;
+  	color: white;
+  	background: rgba(0,0,0,.6);
+  	padding: .75em;
+  	padding-bottom: 1.8em;
+  }
+
+  .image-caption p {
+  	margin: 1em;
+  }
+
+  @media (min-width: 37rem) {
+  	.an-image {
+  		width: 50%;
+  		float: left;
+  	}
+  }
+
+  @media (min-width: 60rem) {
+  	.an-image {
+  		width: 50%;
+  }
+
+  footer {
+  	background: #006000;
+  }

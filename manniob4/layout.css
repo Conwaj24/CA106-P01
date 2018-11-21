@@ -1,0 +1,185 @@
+body {
+    background-color: black;
+}
+.header-content {
+    padding-left: 2%;
+    margin: auto;
+    width: 50%;
+    border: 3px solid whitesmoke;
+    background-color: #333;
+}
+.about-me-container {
+    padding-left: 2%;
+    padding-bottom: 2%;
+    background-color: #333;
+}
+.work-experience-container {
+    padding-left: 2%;
+    padding-bottom: 1%;
+    background-color: #333;
+}
+.image-gallery-container {
+    margin: 1%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    background-color: #333;
+}
+
+.an-image img {
+    padding: 10%;
+    border-radius: 50%;
+    width: 80%;
+}
+.an-image {
+    margin: 5%;
+    border: 1px solid #ccc;
+    float: left;
+    width: 20%;
+    height: auto;
+}
+.an-image:hover {
+    border: 1px solid #777;
+    width: 25%;
+}
+.image-caption {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.container-content {
+    background-color: #333;
+}
+.contact-me-container{
+    width: 30%;
+    border-radius: 10px;
+    float: right;
+    margin-right: 5%;
+}
+
+p {
+    margin: 1%;
+    padding: 1%;
+    width: 40%;
+    background-color: black;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+}
+ul {
+    margin: 2%;
+    padding: 1% 1% 1% 3%;
+    background-color: #555;
+    width: 35%;
+}
+
+ul li {
+    font-family: 'Archivo', sans-serif;
+}
+h1, h2 {font-family: 'Spicy Rice', cursive;
+    text-indent: 1%;}
+a {
+    color: darkslateblue
+}
+h2 {
+    color: white;
+    background-color: #111;
+    text-indent: 1%;
+    padding: 0;
+}
+.page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+.page-nav li {
+    float: left;
+}
+.page-nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.page-nav a:hover {
+    background-color: #111;
+    color: white;
+}
+
+form {
+    position: relative;
+    width: 75%;
+    height: 500px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+    font-weight: bold;
+    color: #09C;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #999;
+    border: inset 1px solid #333;
+    margin-left: 10%;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+textarea#contact-message {
+  width: 95%;
+  display: block;
+  height: 150px;
+}
+
+input[type="submit"] {
+  width:auto;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+
+input[type="submit"]:hover {
+  background: #fff;
+  color: #09C;
+}
+input {
+  width: 95%;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+}
+form[method="post"] p {
+  width: 77%;
+  display: block;
+  border: 1px solid #999;
+}
+
+label {
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+}
+textarea {
+  border: 1px solid #999;
+  height: 25px;
+}
+#contact-message {
+  width: 10%;
+}
+footer p {
+    width: 100%;
+    padding: 1%;
+}
+
+.page-footer {
+    float: left;
+    margin-top: 30%;
+}

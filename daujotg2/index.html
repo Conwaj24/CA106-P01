@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tags for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Gytis Daujotas's Website</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts -->
+    <link rel="stylesheet" href="layout.css" />
+</head>
+
+<body>
+    <main>
+        <!-- You could style Main here if you wish-->
+        <nav class="page-nav">
+            <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <header class="page-header">
+            <!-- Indicates this tag is a header, which is usually used for a brief introduction. -->
+            <div class="header-content">
+                <!-- The div tag defines a division for content. -->
+                <h1>Gytis Daujotas</h1>
+                <p>CA Student with a passion for computing</p>
+            </div>
+        </header>
+        <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about" class="about-me container">
+            <!-- A section tag indicates that this is a new section, which indicates that this content is different semantically from the previous sections before it. -->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div class="content">
+                    <p>
+                        Hi! My name is Gytis. I'm a 17 year old student at Dublin City University, Ireland. I study
+                        Computer Applications and I have an unquenchable thrist for coffee. You can usually find me
+                        hanging around Londis and going to the Rock Climbing society.
+                    </p>
+                    <h3>Links</h3>
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/gytdau">My Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://gytdau.com">My Main Site</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <div class="content">
+                    <h3>Workday</h3>
+                    <h4><em>Dublin, Ireland</em> - 3​ JULY 2017 - 14​ JULY 2017</h4>
+                    <p>
+                        I managed a self-directed project to develop a Slack
+                        integration to track employee PTOs, using natural language processing.
+                    </p>
+                    <ul>
+                        <li>Learned about the ins and outs of working at a company</li>
+                        <li>Participated in meetings</li>
+                        <li>Was held as a valuable member of the team</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="images" class="image-gallery container">
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+                    <div class="an-image">
+                        <img src="https://images.unsplash.com/photo-1540744276164-9dc898353c7b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76f6b3aecebe75556020538f64555872&auto=format&fit=crop&w=600&q=80"
+                            alt="A picture of a galaxy far above an arctic region">
+                        <div class="image-caption">I always thought astronomy would be a noble career choice if
+                            computer science didn't work.</div>
+                    </div>
+                    <div class="an-image">
+                        <img src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=31aa9ab0a6a85bb9201fa34f1dca1347&auto=format&fit=crop&w=600&q=80"
+                            alt="A picture of coffee beans in a ruck-sack.">
+                        <div class="image-caption">This stuff fuels me, and I can't go anywhere without it.</div>
+                    </div>
+                    <div class="an-image">
+                        <img src="https://images.unsplash.com/photo-1539585296982-aa5764274899?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c9df8c21376af8ea672914d8b6248824&auto=format&fit=crop&w=600&q=80"
+                            alt="A vista of the ocean seen through a crack in a rock wall.">
+                        <div class="image-caption">Travel has always been one of my life long goals. I'd love to
+                            eventually see Greece.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/gytis.daujotas2@mail.dcu.ie" method="post">
+                        <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="send my message" /> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="footer-content">
+                <p> <span class="footer-text">&copy; <a href="dcu.ie/">DCU 2018</a>
+                    </span> <span class="footer-separator">&middot;</span> <span class="footer-text">Gytis Daujotas</span>
+                    <span class="footer-separator">&middot;</span> <span class="footer-text">This is student coursework</span>
+                    <span class="footer-separator">&middot;</span> <span class="footer-text">Lecturer<a href="http://www.computing.dcu.ie/~jkernan">Jane
+                            Kernan</a></span> <span class="footer-separator">&middot;</span> <span class="footer-text">
+                        <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid
+                            HTML</a><br />
+
+                    </span> </p>
+                <!--- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

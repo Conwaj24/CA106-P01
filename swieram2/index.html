@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="I'm not very interesting." />
+    <!-- meta tags for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Maciej Zamoyski Swierad</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts -->
+    <link rel="stylesheet" href="layout.css" /> </head>
+
+<body>
+    <main>
+	    <!-- You could style Main here if you wish-->
+        <header class="page-header">  <!-- What does the header do? the header holds information that comes before the main content of the webpage and  usually has things such as navigational menus, search forms etc., content that is duplicated on other parts of the page. -->
+          <nav> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+              <ul>
+                  <li><a href="#about">About Me</a></li>
+                  <li><a href="#work">Work Experience</a></li>
+                  <li><a href="#images">Image Gallery</a></li>
+                  <li><a href="#contact">Contact Me</a></li>
+              </ul>
+          </nav>
+        </header>
+        <section class="home-page">
+        	<div class="box">
+        		<h1><strong>Maciej Zamoyski Swierad</strong><br>Local Cyber Security Nerd</h1>
+        	</div>
+        </section>
+        <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <div class="box">
+          <section id="about" class="about-me">  <!--What does the section do here?  the secion here groups related elements together. -->
+              <div class="content">
+                  <h1>About Me</h1>
+                      <p>My name is <strong>Maciej Zamoyski Swierad</strong>, I was born in a small town in Poland called <strong>Nowy Sacz</strong>. From a young age I've had a massive interest in computing (thanks to my brother and uncles whom all work in the field)<br> I moved to Ireland when I was 4, and have lived  here ever since.  Most of my summers I spent in DCU in <strong>CTYI (Centre For Talented Youth Ireland)</strong> Programme doing courses ranging from Cutting Edge Science to Law. <br>After taking Law in my last year of CTYI, my plans of being a computer scientist shifted and I wanted to be a barrister, however in the end I ended up pursuing computer science anyway. One day I hope to master in the Bar of Ireland. <br>I've built and sold websites, I've participated in competitive programming and my plan after my degree is to work in Cyber Security, however my passion lies in authorship, and I hope to one day publish a book</p><!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
+            </div>
+          </section>
+        </div>
+        <div class="box">
+          <section id="work">
+                  <div class="content-2">
+                    <h1>Work Experience</h1>
+                    <ul>
+                      <li><strong>SAP</strong>
+                      <p>I had work experience in SAP back in 2016 for 2 months, there I learned to work with SAPs own language and also Java, they taught me the basics of computer science.  With them I also had the opportunity to work with cyber security and that's where I fell in love with it.</p></li>
+                      <li><strong>Aviva</strong>
+                      <p>Here I worked for 2 months in early 2017, I got to work with Machine Learning, and mostly automation.  I got to help automate monotonous paperwork that would take employees a few hours a week, that now instead gets done by the click of a button.</p></li>
+                      <li><strong>Workday</strong>
+                      <p>My most recent experience, I worked with them in 2018 during my sixth year in secondary school, I got to look at similar work as in SAP as they both work with cloud computing for the most part. Here I also got to learn what their HR looks for in interviews and they helped me write my CV.</p></li>
+                      <li><strong>Phibsboro Credit Union</strong>
+                      <p>I worked there for the summer of 2016 as a teller, had to deal with handling massive amounts of cash and dealing with people's loan applications.</p></li>
+                      <li><strong>RS ROOFING</strong>
+                      <p>I spent my 2018 summer working at RS ROOFING as a helper, I mostly passed around tools and learned how to bend zinc and other metals, because it was on a building site I had to get a SafePass training and manual handling.</p></li>
+                      <li><strong>Website Freelancer</strong>
+                      <p>I've made and sold websites, currently no website is online however my latest sale: rsroofing.ie should be going online soon enough, I learned HTML and CSS by myself about 2 years ago with the help of family members when needed.</p></li>
+                    </ul>
+                      <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
+                  </div>
+          </section>
+        </div>
+        <section id="images">
+                <!-- image 01 -->
+              	<figure class="an-image">
+              		<img src="img/tatra-mountains.jpg" alt="Tatra Mountains">
+              		<figcaption class="image-caption">
+              			<p>Tatra Mountains</p>
+              			<a href="https://en.wikipedia.org/wiki/Tatra_Mountains" class="button button-accent button">Details</a>
+              		</figcaption>
+              	</figure>
+                <!-- image 02 -->
+                <figure class="an-image">
+                  <img src="img/Nowy-Sacz-2.jpg" alt="Nowy Sacz">
+                  <figcaption class="image-caption">
+                    <p>My Hometown</p>
+                    <a href="https://en.wikipedia.org/wiki/Nowy_S%C4%85cz" class="button button-accent button">Details</a>
+                  </figcaption>
+                </figure>
+        </section>
+        <div class="box">
+          <section id="contact">
+                  <div class="content-3">
+                      <h1>Contact Me</h1>
+                      <form action="https://formspree.io/maciej.swierad2@mail.dcu.ie" method="post">
+  	                    <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                          <p>
+                              <label for="contact-name">Your Name</label>
+                              <input id="contact-name" type="text" name="contact-name" />
+                          </p>
+                          <p>
+                              <label for="contact-email">Your email address</label>
+                              <input id="contact-email" type="email" name="contact-email" /> </p>
+                          <p>
+                              <label for="contact-phone">Your phone number</label>
+                              <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                          <p>
+                              <label for="contact-message">Your message</label>
+                              <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                          </p>
+                          <p>
+                              <input type="submit" value="send my message" /> </p>
+                      </form>
+                  </div>
+          </section>
+        </div>
+        <footer class="page-footer">
+            <div class="footer-content">
+                <p> <span class="footer-text">&copy; <a href="dcu.ie/">DCU 2018</a>
+    </span> <span class="footer-separator">&middot;</span> <span class="footer-text">Maciej Swierad</span> <span class="footer-separator">&middot;</span> <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span> <span class="footer-text">Lecturer: <a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> <span class="footer-separator">&middot;</span> <span class="footer-text">
+     <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/>
+
+        </span> </p>
+        <!--- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,700|IBM+Plex+Sans+Condensed:300,400,500,700|IBM+Plex+Sans:300,400,500,700|IBM+Plex+Serif:300,400,500,700');
 body {
   background-color: black;
+  max-width: 700px;
+  margin: auto;
 }
 h1 {
   color: aquamarine;
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 400;
   background-image: linear-gradient(to right, black, grey);
   border-bottom: 3% solid red;
   padding: 1%;
+}
+* {
+  font-family: "IBM Plex Sans";
 }
 h2 {
   color: forestgreen;

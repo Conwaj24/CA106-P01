@@ -9,7 +9,7 @@ h1 {
   font-family: "IBM Plex Sans Condensed";
   font-weight: 400;
   background-image: linear-gradient(to right, black, grey);
-  border-bottom: 3em solid red;
+  border-bottom: 1em solid red;
   padding: 1em;
 }
 * {
@@ -17,7 +17,7 @@ h1 {
 }
 h2 {
   color: forestgreen;
-  width: 30em;
+  width: 20em;
   margin: 15px, 0px, 5px, 0px;
   border-bottom: 2px solid red;
   padding: 1em;

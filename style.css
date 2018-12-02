@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,700|IBM+Plex+Sans+Condensed:300,400,500,700|IBM+Plex+Sans:300,400,500,700|IBM+Plex+Serif:300,400,500,700');
 body {
+  /* we chose a dark background, for greater readability.*/
   background-color: black;
   max-width: 700px;
   margin: auto;
 }
 h1 {
+  /* We spent effort looking for compatible colors for the background.*/
   color: aquamarine;
   font-family: "IBM Plex Sans Condensed";
   font-weight: 400;
@@ -13,6 +15,7 @@ h1 {
   padding: 1em;
 }
 * {
+  /* As you can see here, we used a font downloaded from Google Fonts.*/
   font-family: "IBM Plex Sans";
 }
 h2 {
@@ -51,6 +54,7 @@ cite{
 }
 
 /* Classes */
+/* We decided to use extensive use of classes for greater code neatness.*/
 .nav {
   float: left;
   padding: 1em;

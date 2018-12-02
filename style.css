@@ -58,6 +58,13 @@ i {
   width: 40%;
   float: left;
 }
+.full-width-img {
+  width: 100%;
+}
+.full-width-img-caption {
+  font-style: italic;
+  padding: 0;
+}
 
 /* Classes */
 /* We decided to use extensive use of classes for greater code neatness.*/

@@ -1,17 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400|IBM+Plex+Sans:400,400i,700');
+/*global variables*/
+:root{
+  /*main colors*/
+  --col0: #111;
+  --col1: rgba(41, 41, 41, 0.8);
+  --col2: #fff;
+  --col3: rgba(255,255,255,0.5);
+/*accent colors (each should appear ~half as often as the last)*/
+  --acc0: #1e7179;
+  --acc1: #b88400;
+  --acc2: #e2ed6a;
+/*main text colors*/
+  --text: var(--col2);
+  --text-alt: var(--col0);
+/*text colors*/
+  --link: var(--acc0);
+  --h1: var(--text);
+  --h2: var(--acc0);
+  --h3: var(--text);
+/*fill colors*/
+  --main: var(--col0);
+  --nav: var(--col1);
+  --content: var(--col1)
+  --underline: var(--col1);
+  /*currently uncategorized*/
+  --lgrad: linear-gradient(to right, var(--col0), var(--col3));
+}
+
 body {
   /* we chose a dark background, for greater readability.*/
   /* We did not use pure black to avoid eye strain. */
-  background-color: #131313;
+  background-color: var(--main);
+  color: var(--text);
   max-width: 700px;
   margin: auto;
+  padding: 1em;
+  text-indent: 1em;
 }
 h1 {
   /* We spent effort looking for compatible colors for the background.*/
-  color: aquamarine;
+  color: var(--h1);
   font-family: "IBM Plex Sans Condensed";
   font-weight: 400;
-  background-image: linear-gradient(to right, black, grey);
+  background-image: var(--lgrad);
   padding: 1em;
   margin-bottom: 0;
 }
@@ -21,37 +52,24 @@ h1 {
   line-height: 1.4;
 }
 h2 {
-  color: forestgreen;
+  color: var(--h2);
   margin: 15px, 0px, 5px, 0px;
   padding: 1em;
 }
 h3 {
-  color: aqua;
-  border-bottom: 1% solid red;
+  color: var(--h3);
+  border-bottom: 1em var(--underline);
   padding: 1em;
   text-indent: 2em;
 }
 
 a {
-  color: forestgreen;
+  color: var(--link);
   padding: 0.5em;
-}
-
-p {
-  color: white;
-  padding: 1em;
-  text-indent: 1em;
-}
-li {
-  color: white;
-}
-i {
-  color: white;
 }
 .cite-author {
   padding: 1em;
   font-style: italic;
-  color: white;
 }
 .header-img {
   padding: 5em 1em 1em 3em;
@@ -67,15 +85,13 @@ i {
 }
 
 /* Classes */
-/* We decided to use extensive use of classes for greater code neatness.*/
+/* We decided to make "extensive" use of classes for greater code neatness.*/
 .nav {
-  padding: 1em;
-  background-color: #1d1d1d;
+  background-color: var(--nav);
   margin-bottom: 3em;
   text-align: center;
 }
 .content {
-  background-color: #1d1d1d;
-  padding: 1em;
+  background-color: var(--content);
   margin: 1em;
 }

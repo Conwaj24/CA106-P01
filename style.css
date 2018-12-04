@@ -61,7 +61,6 @@ h3 {
   color: var(--h3);
   border-bottom: 1em var(--underline);
   padding: 1em;
-  text-indent: 2em;
 }
 
 a {

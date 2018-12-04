@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,700|IBM+Plex+Sans+Condensed:300,400,500,700|IBM+Plex+Sans:300,400,500,700|IBM+Plex+Serif:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400|IBM+Plex+Sans:400,400i,700');
 body {
   /* we chose a dark background, for greater readability.*/
-  background-color: darkslategrey;
-  max-width: 40em;
+  /* We did not use pure black to avoid eye strain. */
+  background-color: #131313;
+  max-width: 700px;
+  margin: auto;
 }
 h1 {
   /* We spent effort looking for compatible colors for the background.*/
@@ -10,16 +12,18 @@ h1 {
   font-family: "IBM Plex Sans Condensed";
   font-weight: 400;
   background-image: linear-gradient(to right, black, grey);
+  padding: 1em;
+  margin-bottom: 0;
 }
 * {
   /* As you can see here, we used a font downloaded from Google Fonts.*/
   font-family: "IBM Plex Sans";
+  line-height: 1.4;
 }
 h2 {
   color: forestgreen;
   width: 21m;
   margin: 15px, 0px, 5px, 0px;
-  border-bottom: 2px solid red;
   padding: 1em;
 }
 h3 {
@@ -31,6 +35,7 @@ h3 {
 
 a {
   color: forestgreen;
+  padding: 0.5em;
 }
 
 p {
@@ -44,21 +49,34 @@ li {
 i {
   color: white;
 }
-cite{
-  color:white;
-  padding-left:5em;
-  text-indent: 3em;
+.cite-author {
+  padding: 1em;
+  font-style: italic;
+  color: white;
+}
+.header-img {
+  padding: 5em 1em 1em 3em;
+  width: 40%;
+  float: left;
+}
+.full-width-img {
+  width: 100%;
+}
+.full-width-img-caption {
+  font-style: italic;
+  padding: 0;
 }
 
 /* Classes */
 /* We decided to use extensive use of classes for greater code neatness.*/
 .nav {
-  float: left;
-  background-color: #111111;
+  padding: 1em;
+  background-color: #1d1d1d;
+  margin-bottom: 3em;
   text-align: center;
-  width: 40em;
-}.content {
-  background-color: #111111;
+}
+.content {
+  background-color: #1d1d1d;
   padding: 1em;
   margin: 1em;
   border: 5px solid aqua;

@@ -95,3 +95,19 @@ a {
   background-color: var(--content);
   margin: 1em;
 }
+.cite-author {
+  padding: 1em;
+  font-style: italic;
+  color: white;
+}
+.header-img {
+  padding: 5em 1em 1em 3em;
+  width: 40%;
+  float: left;
+}
+.full-width-img {
+  width: 100%;
+}
+.full-width-img-caption {
+  font-style: italic;
+  padding: 0;

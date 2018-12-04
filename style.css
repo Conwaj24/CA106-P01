@@ -79,3 +79,20 @@ i {
   padding: 1em;
   margin: 1em;
 }
+.tool{
+  border: 3px #5566ff;
+
+}
+.tool .tooltip{
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(1,1,1,0.7);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+.tool:hover .tooltip{
+  visibility: visible;
+}

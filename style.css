@@ -19,6 +19,7 @@ h1 {
   /* As you can see here, we used a font downloaded from Google Fonts.*/
   font-family: "IBM Plex Sans";
   line-height: 1.4;
+  color: white;
 }
 h2 {
   color: forestgreen;
@@ -38,11 +39,6 @@ a {
   padding: 0.5em;
 }
 
-p {
-  color: white;
-  padding: 1em;
-  text-indent: 1em;
-}
 li {
   color: white;
 }

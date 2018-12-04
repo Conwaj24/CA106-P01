@@ -2,12 +2,12 @@
 /*global variables*/
 :root{
   /*main colors*/
-  --col0: #131313;
+  --col0: #1d565e;
   --col1: rgba(41, 41, 41, 0.8);
   --col2: #fff;
   --col3: rgba(255,255,255,0.5);
 /*accent colors (each should appear ~half as often as the last)*/
-  --acc0: #1e7179;
+  --acc0: #b2e1e8;
   --acc1: #b88400;
   --acc2: #e2ed6a;
 /*main text colors*/
@@ -55,6 +55,7 @@ h2 {
   color: var(--h2);
   margin: 15px, 0px, 5px, 0px;
   padding: 1em;
+  border-bottom: 1px solid var(--col2)
 }
 h3 {
   color: var(--h3);
@@ -94,6 +95,7 @@ a {
 .content {
   background-color: var(--content);
   margin: 1em;
+  padding 0 1em 0 1em;
 }
 .cite-author {
   padding: 1em;

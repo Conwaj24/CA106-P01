@@ -21,7 +21,7 @@
 /*fill colors*/
   --main: var(--col0);
   --nav: var(--col1);
-  --content: var(--col1)
+  --content: var(--col3);
   --underline: var(--col1);
   /*currently uncategorized*/
   --lgrad: linear-gradient(to right, var(--col0), var(--col3));
@@ -111,3 +111,4 @@ a {
 .full-width-img-caption {
   font-style: italic;
   padding: 0;
+}

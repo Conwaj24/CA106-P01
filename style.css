@@ -97,7 +97,7 @@ input, textarea {
   float: left;
 }
 .header-img:hover {
-  transform: scale(1.2);
+  transform: scale(2);
   margin-left: 0;
 }
 .full-width-img {

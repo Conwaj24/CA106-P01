@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400|IBM+Plex+Sans:400,400i,700');
 /*global variables*/
 :root{
-  /*main colors*/
+  /*main colors (should be neutral or at least muted unless you're a sociopath)*/
   --col0: #1d565e;
   --col1: rgba(41, 41, 41, 0.8);
   --col2: #fff;
@@ -18,11 +18,15 @@
   --h1: var(--text);
   --h2: var(--acc0);
   --h3: var(--text);
+  --tool: var(--text);
+  --tool-outline: var(--acc1);
+  --tooltip: var(--text-alt);
 /*fill colors*/
   --main: var(--col0);
   --nav: var(--col1);
   --content: var(--col3);
   --underline: var(--col1);
+  --tooltip-bg: var(--col1);
   /*currently uncategorized*/
   --lgrad: linear-gradient(to right, var(--col0), var(--col3));
 }
@@ -93,10 +97,8 @@ a {
 }
 .content {
   background-color: var(--content);
-  opacity:
   margin: 1em;
-<<<<<<< HEAD
-  padding 0 1em 0 1em;
+  padding: 0 1em;
 }
 .cite-author {
   padding: 1em;
@@ -118,18 +120,21 @@ a {
 .header-img:hover {
   transform: scale(1.5);
 }
-=======
+/*tooltip styles*/
+.tool{
+  color: var(--tool);
 }
 .tool::before, .tool::after{
   content: "|";
   font-weight: bold;
-  color: rgb(106, 166, 185);
+  color: var(--tool-outline);
 }
 .tool .tooltip{
   visibility: hidden;
 
   max-width: 300px;
-  background-color: rgba(1,1,1,0.9);
+  color: var(--tooltip);
+  background-color: var(--tooltip-bg);
   text-align: center;
   border-radius: 6px;
   padding: 5px;
@@ -142,4 +147,3 @@ a {
 .tooltip img{
   width: 100%;
 }
->>>>>>> tooltips

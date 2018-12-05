@@ -96,6 +96,10 @@ input, textarea {
   width: 30%;
   float: left;
 }
+.header-img:hover {
+  transform: scale(1.2);
+  margin-left: 0;
+}
 .full-width-img {
   width: 100%;
 }
@@ -117,10 +121,6 @@ input, textarea {
   padding: 1em;
   font-style: italic;
   color: white;
-}
-.header-img:hover {
-  transform: scale(2);
-  margin-left: 0;
 }
 
 

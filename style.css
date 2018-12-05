@@ -114,3 +114,6 @@ a {
   font-style: italic;
   padding: 0;
 }
+.header-img:hover {
+  transform: scale(1.5);
+}

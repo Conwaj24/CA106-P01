@@ -31,6 +31,12 @@
   --lgrad: linear-gradient(to right, var(--col0), var(--col3));
 }
 
+
+* {
+  /* As you can see here, we used a font downloaded from Google Fonts.*/
+  font-family: "IBM Plex Sans";
+  line-height: 1.8;
+}
 body {
   /* we chose a dark background, for greater readability.*/
   /* We did not use pure black to avoid eye strain. */
@@ -40,11 +46,6 @@ body {
   margin: auto;
   padding: 1em;
   text-indent: 1em;
-}
-* {
-  /* As you can see here, we used a font downloaded from Google Fonts.*/
-  font-family: "IBM Plex Sans";
-  line-height: 1.8;
 }
 h1 {
   /* We spent effort looking for compatible colors for the background.*/
@@ -116,13 +117,6 @@ input, textarea {
   padding: 1em;
   font-style: italic;
   color: white;
-}
-.full-width-img {
-  width: 100%;
-}
-.full-width-img-caption {
-  font-style: italic;
-  padding: 0;
 }
 .header-img:hover {
   transform: scale(1.25);

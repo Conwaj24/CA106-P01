@@ -79,20 +79,25 @@ i {
   padding: 1em;
   margin: 1em;
 }
-.tool{
-  border: 3px #5566ff;
-
+.tool::before, .tool::after{
+  content: "|";
+  font-weight: bold;
+  color: rgb(106, 166, 185);
 }
 .tool .tooltip{
   visibility: hidden;
-  width: 120px;
-  background-color: rgba(1,1,1,0.7);
+
+  max-width: 300px;
+  background-color: rgba(1,1,1,0.9);
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 5px;
   position: absolute;
   z-index: 1;
 }
 .tool:hover .tooltip{
   visibility: visible;
+}
+.tooltip img{
+  width: 100%;
 }

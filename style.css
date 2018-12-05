@@ -95,6 +95,7 @@ a {
   background-color: var(--content);
   opacity:
   margin: 1em;
+<<<<<<< HEAD
   padding 0 1em 0 1em;
 }
 .cite-author {
@@ -117,3 +118,28 @@ a {
 .header-img:hover {
   transform: scale(1.5);
 }
+=======
+}
+.tool::before, .tool::after{
+  content: "|";
+  font-weight: bold;
+  color: rgb(106, 166, 185);
+}
+.tool .tooltip{
+  visibility: hidden;
+
+  max-width: 300px;
+  background-color: rgba(1,1,1,0.9);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+.tool:hover .tooltip{
+  visibility: visible;
+}
+.tooltip img{
+  width: 100%;
+}
+>>>>>>> tooltips

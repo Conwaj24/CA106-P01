@@ -5,7 +5,7 @@
   --col0: #1d565e;
   --col1: rgba(41, 41, 41, 0.8);
   --col2: #fff;
-  --col3: rgba(255,255,255,0.5);
+  --col3: rgba(255,255,255,0.1);
 /*accent colors (each should appear ~half as often as the last)*/
   --acc0: #b2e1e8;
   --acc1: #b88400;
@@ -93,6 +93,7 @@ a {
 }
 .content {
   background-color: var(--content);
+  opacity:
   margin: 1em;
   padding 0 1em 0 1em;
 }

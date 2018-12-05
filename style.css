@@ -125,7 +125,7 @@ input, textarea {
   padding: 0;
 }
 .header-img:hover {
-  transform: scale(1.25);
+  transform: scale(2);
   margin-left: 0;
 }
 

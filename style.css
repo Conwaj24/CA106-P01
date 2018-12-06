@@ -112,6 +112,9 @@ input, textarea {
   margin-bottom: 3em;
   text-align: center;
 }
+.nav a:hover {
+  background-color: #202020;
+}
 .content {
   background-color: var(--content);
   margin: 1em;

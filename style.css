@@ -3,15 +3,17 @@
 :root{
   /*main colors (should be neutral or at least muted unless you're a sociopath)*/
   --col0: #1d565e;
-  --col1: rgba(41, 41, 41, 0.9);
-  --col2: #fff;
-  --col3: rgba();
+  --col1: #333;
+  --col2: rgba(41, 41, 41, 0.9);
+  --col3: #fff;
+  --col4: #000;
 /*accent colors (each should appear ~half as often as the last)*/
   --acc0: #b2e1e8;
   --acc1: #b88400;
   --acc2: #e2ed6a;
+
 /*main text colors*/
-  --text: var(--col2);
+  --text: var(--col3);
   --text-alt: var(--col0);
 /*text colors*/
   --link: var(--acc0);
@@ -21,15 +23,20 @@
   --tool: var(--text);
   --tool-outline: var(--acc1);
   --tooltip: var(--text);
+  --citation: var(--acc1);
+  --input: var(--text);
+
+/*main fill colors*/
+  --border: var(--col4);
 /*fill colors*/
   --main: var(--col0);
   --nav: var(--col1);
-  --content: var(--col3);
+  --content: var(--col1);
   --underline: var(--col1);
-  --tooltip-bg: var(--col1);
-  --text-area-bg: var(--col1)
-  /*currently uncategorized*/
-  --lgrad: linear-gradient(to right, var(--col0), var(--col3));
+  --tooltip-bg: var(--col2);
+  --input-bg: var(--col0);
+/*currently uncategorized*/
+  --lgrad: linear-gradient(to right, var(--col0), var(--col2));
 }
 
 
@@ -61,7 +68,7 @@ h2 {
   color: var(--h2);
   margin: 15px, 0px, 5px, 0px;
   padding: 1em;
-  border-bottom: 1px solid var(--col2)
+  border-bottom: 1px solid var(--col3)
 }
 h3 {
   color: var(--h3);
@@ -73,24 +80,9 @@ a {
   padding: 0.5em;
 }
 
-/* Forms */
-form {
-  align-content: center;
-}
-input, textarea {
-  background-color: var(--col1);
-  border: none;
-  padding: 1em;
-  border-bottom: 1px solid var(--input);
-  margin-left: 1em;
-}
-.send-btn {
-  background-color: var(--button-bg);
-  color: var(--button);
-}
+.button{
 
-/* Classes */
-/* We decided to make "extensive" use of classes for greater code neatness.*/
+}
 .header-img {
   padding: 0 1em 0 0;
   width: 30%;
@@ -115,7 +107,7 @@ input, textarea {
 .nav a:hover {
   background-color: #202020;
 }
-.content {
+section.content {
   background-color: var(--content);
   margin: 1em;
   padding: 1em 1em 1em 1em;
@@ -123,14 +115,28 @@ input, textarea {
 .cite-author {
   padding: 1em;
   font-style: italic;
-  color: white;
+  color: var(--citation);
 }
+
+/*forms */
+form {
+  align-content: center;
+}
+input, textarea {
+  background-color: var(--input-bg);
+  border: none;
+  padding: 0.2em;
+  border-bottom: 1px solid var(--input);
+  margin-left: 1em;
+}
+.send-btn {
+  background-color: var(--button-bg);
+  color: var(--button);
+}
+
 /*responsive gallery*/
 .gallery{
   display: inline-block;
-}
-.gallery:hover {
-  border: 1px solid #777;
 }
 .row {
   display: -ms-flexbox;
@@ -165,9 +171,6 @@ input, textarea {
   }
 }
 @media only screen and (max-width: 600px) {
-  [role="responsive"]{
-      width: 100%;
-  }
   .column {
       -ms-flex: 48%;
       flex: 48%;

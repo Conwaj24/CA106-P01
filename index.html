@@ -15,7 +15,7 @@
     <a href="#team">Team</a>
     <a onclick="contact()">Contact</a>
   </div>
-  <div class="content">
+  <section class="content">
     <h2>What are the Seven Wonders?</h2>
     <p>These ancient structures were marvels of an age of progress and exploration.
       They have been endlessly studied and celebrated by those of multiple professions.
@@ -30,9 +30,10 @@
       with crude tools and manual labour, there is abounding proof of the style and ingenuity of thes vast emprires.
       Today sadly, all but one of these ancient wonders have vanished.
     </p>
-  </div>
+  </section>
+  
   <!--The 'content' class is responsible for the card layout.-->
-  <div class="content">
+  <section class="content">
     <h2 id="idea">What is our idea?</h2>
     <p>Our idea is illustrating the history of each wonder under the following headings:</p>
     <!--The below is an un-ordered list of the general outline for each section.-->
@@ -42,8 +43,9 @@
       <li>Death (modern day where destruction not applicable e.g. pyramids)</li>
       <li>Undecided (sources, modern day, image gallery)</li>
     </ul>
-  </div>
-  <div class="content">
+  </section>
+
+  <section class="content">
     <h2 id="wonders">Here are our chosen wonders:</h2>
     <ul>
       <li><a href="lighthouse_of_alexandria/index.html">Lighthouse of Alexandria</a></li>
@@ -52,8 +54,9 @@
       <li><a href="mausoleum_at_halicarnassus/index.html">The Mausoleum at Helicarnassus</a></li>
       <li><a href="colossus_of_rhodes/index.html">The Colossus of Rhodes</a></li>
     </ul>
-  </div>
-  <div class="content">
+  </section>
+  
+  <section class="content">
     <h3 id="team">Meet our team:</h3>
     <ul>
       <li>Brendan Mannion</li>
@@ -62,39 +65,39 @@
       <li>Gytis Daujotas</li>
       <li>Kevin Daniel Andrei</li>
     </ul>
-  </div>
+  </section>
 
-<section id="images" class="image-gallery container" role="responsive" width="50%">
-  <div class="container-content">
-    <h2>Image Gallery</h2>
-    <div class="content row">
-      <div class="column">
-        <img src="img/Lighthouse_purpose.png" style="width:100%">
-        <img src="img/construction.jpg" style="width:100%">
-        <img src="img/great_pyramid_1.png" style="width:100%">
-        <img src="img/hanging_gardens_of_babylon_1.png" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="img/hanging_gardens_of_babylon_2.jpg" style="width:100%">
-        <img src="img/hanging_gardens_of_babylon_3.jpg" style="width:100%">
-        <img src="img/insidepy.png" style="width:100%">
-        <img src="img/lighthouse_architecture.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="img/lighthouse_destruction.jpg" style="width:100%">
-        <img src="mausoleum_at_halicarnassus/img/mausolus.jpg" style="width:100%">
-        <img src="mausoleum_at_halicarnassus/img/rendition0.jpg" style="width:100%">
-        <img src="mausoleum_at_halicarnassus/img/rendition1.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="mausoleum_at_halicarnassus/img/rendition2.jpg" style="width:100%">
-        <img src="mausoleum_at_halicarnassus/img/ruins.jpg" style="width:100%">
-        <img src="mausoleum_at_halicarnassus/img/man.jpg" style="width:100%">
-        <img src="mausoleum_at_halicarnassus/img/relief0.jpg" style="width:100%">
+  <section id="images" class="gallery content" role="responsive" width="50%">
+    <div class="container-content">
+      <h2>Image Gallery</h2>
+      <div class="content row">
+        <div class="column">
+          <img src="img/Lighthouse_purpose.png" style="width:100%">
+          <img src="img/construction.jpg" style="width:100%">
+          <img src="img/great_pyramid_1.png" style="width:100%">
+          <img src="img/hanging_gardens_of_babylon_1.png" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img/hanging_gardens_of_babylon_2.jpg" style="width:100%">
+          <img src="img/hanging_gardens_of_babylon_3.jpg" style="width:100%">
+          <img src="img/insidepy.png" style="width:100%">
+          <img src="img/lighthouse_architecture.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img/lighthouse_destruction.jpg" style="width:100%">
+          <img src="mausoleum_at_halicarnassus/img/mausolus.jpg" style="width:100%">
+          <img src="mausoleum_at_halicarnassus/img/rendition0.jpg" style="width:100%">
+          <img src="mausoleum_at_halicarnassus/img/rendition1.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="mausoleum_at_halicarnassus/img/rendition2.jpg" style="width:100%">
+          <img src="mausoleum_at_halicarnassus/img/ruins.jpg" style="width:100%">
+          <img src="mausoleum_at_halicarnassus/img/man.jpg" style="width:100%">
+          <img src="mausoleum_at_halicarnassus/img/relief0.jpg" style="width:100%">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!--
 <div class="content">
@@ -185,15 +188,15 @@
         <table>
           <tr>
             <th><label for="contact-name">Your Name</label></th>
-            <th><input id="contact-name" type="text" name="contact-name" class="text"></th>
+            <th><input id="contact-name" placeholder="name" type="text" name="contact-name" class="text"></th>
           </tr>
           <tr>
             <th><label for="contact-email">Your email address</label></th>
-            <th><input id="contact-email" type="email" name="contact-email" class="text"></th>
+            <th><input id="contact-email" placeholder="email address" type="email" name="contact-email" class="text"></th>
           </tr>
           <tr>
             <th><label for="contact-phone">Your phone number</label></th>
-            <th><input id="contact-phone" type="tel" name="contact-phone" class="text"></th> 
+            <th><input id="contact-phone" placeholder="phone number" type="tel" name="contact-phone" class="text"></th> 
           </tr>
         </table>
         <p>

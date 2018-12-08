@@ -3,7 +3,7 @@
 :root{
   /*main colors (should be neutral or at least muted unless you're a sociopath)*/
   --col0: #1d565e;
-  --col1: rgba(41, 41, 41, 0.8);
+  --col1: rgba(41, 41, 41, 0.9);
   --col2: #fff;
   --col3: rgba(255,255,255,0.1);
 /*accent colors (each should appear ~half as often as the last)*/

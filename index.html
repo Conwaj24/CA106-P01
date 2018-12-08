@@ -47,15 +47,34 @@
       <li>Kevin Daniel Andrei</li>
     </ul>
   </div>
+  <section id="contact" class="content" style="display: none">
+      <div class="container-content">
+          <h2>Contact Me</h2>
+          <div class="content">
+              <form action="https://formspree.io/[your email address goes here]" method="post">
+                  <table>
+                      <tr>
+                          <th><label for="contact-name">Your Name</label></th>
+                          <th><input id="contact-name" type="text" name="contact-name" class="text"></th>
+                      </tr>
+                      <tr>
+                          <th><label for="contact-email">Your email address</label></th>
+                          <th><input id="contact-email" type="email" name="contact-email" class="text"></th>
+                      </tr>
+                      <tr>
+                          <th><label for="contact-phone">Your phone number</label></th>
+                          <th><input id="contact-phone" type="tel" name="contact-phone" class="text"></th> 
+                      </tr>
+                  </table>
+                  <p>
+                     <textarea placeholder="Your Message" id="contact-message" name="contact-message" class="text" cols="30" rows="1" onkeyup="AutoGrowTextArea(this)"></textarea>
+                  </p>
+                  <p><input type="submit" class="button" value="Send" /> </p>
+              </form>
+          </div>
+      </div>
+  </section>
   <div class="content">
-    <div class="contact" id="contact">
-      <h2>Contact us:</h2>
-      <form>
-        <br>
-        <input type="email" placeholder="Your email" /><br>
-        <textarea name="Text1" cols="21" rows="5" placeholder="Your message"></textarea><br>
-        <input type="button" value="Send" class="send-btn"/>
-        </form></div>
       <i>Due Date: 14th December at 23:55.</i>
     </div>
   </div>

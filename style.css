@@ -124,7 +124,7 @@ input, textarea {
   font-style: italic;
   color: white;
 }
-
+/* contact form*/
 #contact{
 	position: fixed;
     bottom: 0;
@@ -133,6 +133,22 @@ input, textarea {
 	padding: 15px;
 	height: auto;
 	background: rgba(0,0,0,0.8);
+}
+#contact-button{
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  background: var(--tooltip-bg);
+  border-radius: 50px;
+  overflow: auto;
+}
+#contact-button img{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 70%;
 }
 /*tooltip styles*/
 .tool{

@@ -20,7 +20,7 @@
   --h3: var(--text);
   --tool: var(--text);
   --tool-outline: var(--acc1);
-  --tooltip: var(--text-alt);
+  --tooltip: var(--text);
 /*fill colors*/
   --main: var(--col0);
   --nav: var(--col1);
@@ -88,7 +88,6 @@ input, textarea {
   color: white;
 }
 
-
 /* Classes */
 /* We decided to make "extensive" use of classes for greater code neatness.*/
 .header-img {
@@ -126,9 +125,9 @@ input, textarea {
   color: white;
 }
 
-
 /*tooltip styles*/
 .tool{
+  position: relative;
   color: var(--tool);
 }
 .tool::before, .tool::after{
@@ -138,15 +137,29 @@ input, textarea {
 }
 .tool .tooltip{
   visibility: hidden;
-
-  max-width: 300px;
   color: var(--tooltip);
   background-color: var(--tooltip-bg);
   text-align: center;
+  border: 1px var(--tooltip) solid;
   border-radius: 6px;
   padding: 5px;
+  /* position tooltip cetntred above text*/
+  width: 300px;
   position: absolute;
   z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -150px; /*half of width*/
+}
+.tool .tooltip::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--tooltip) transparent transparent transparent;
 }
 .tool:hover .tooltip{
   visibility: visible;

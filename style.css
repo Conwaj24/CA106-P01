@@ -5,7 +5,7 @@
   --col0: #1d565e;
   --col1: rgba(41, 41, 41, 0.9);
   --col2: #fff;
-  --col3: rgba(255,255,255,0.1);
+  --col3: rgba();
 /*accent colors (each should appear ~half as often as the last)*/
   --acc0: #b2e1e8;
   --acc1: #b88400;
@@ -27,6 +27,7 @@
   --content: var(--col3);
   --underline: var(--col1);
   --tooltip-bg: var(--col1);
+  --text-area-bg: var(--col1)
   /*currently uncategorized*/
   --lgrad: linear-gradient(to right, var(--col0), var(--col3));
 }
@@ -80,12 +81,12 @@ input, textarea {
   background-color: var(--col1);
   border: none;
   padding: 1em;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--input);
   margin-left: 1em;
 }
 .send-btn {
-  background-color: var(--col3);
-  color: white;
+  background-color: var(--button-bg);
+  color: var(--button);
 }
 
 /* Classes */
@@ -124,24 +125,55 @@ input, textarea {
   font-style: italic;
   color: white;
 }
-div.gallery{
-  border: 1px solid #ccc;
-  float: left;
-  width: 10em;
-  margin-top: 2em;
+/*responsive gallery*/
+.gallery{
+  display: inline-block;
 }
-
-div.gallery:hover {
+.gallery:hover {
   border: 1px solid #777;
 }
-
-div.gallery img {
-  width: 70%;
-  height: auto;
-  padding: 1%;
-  margin: 1%;
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  -ms-flex: 23.5%;
+  flex: 23.5%;
+  max-width: 23.5%;
+  padding: 0 4px;
 }
 
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1200px) {
+  .column {
+      -ms-flex: 48%;
+      flex: 48%;
+      max-width: 48%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  [role="responsive"]{
+      width: 100%;
+  }
+  .column {
+      -ms-flex: 48%;
+      flex: 48%;
+      max-width: 48%;
+  }
+}
 div.desc {
   padding: 15px;
   text-align: center;

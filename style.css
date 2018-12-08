@@ -25,7 +25,7 @@
   --tooltip: var(--text);
   --citation: var(--acc1);
   --input: var(--text);
-
+  --button: var(--text);
 /*main fill colors*/
   --border: var(--col4);
 /*fill colors*/
@@ -34,7 +34,7 @@
   --content: var(--col1);
   --underline: var(--col1);
   --tooltip-bg: var(--col2);
-  --input-bg: var(--col0);
+  --input-bg: transparent;
 /*currently uncategorized*/
   --lgrad: linear-gradient(to right, var(--col0), var(--col2));
 }
@@ -81,6 +81,11 @@ a {
 }
 
 .button{
+  background-color: var(--nav);
+  margin-bottom: 3em;
+  text-align: center;
+}
+button:hover{
 
 }
 .header-img {
@@ -230,7 +235,7 @@ div.desc {
   color: var(--tooltip);
   background-color: var(--tooltip-bg);
   text-align: center;
-  border: 1px var(--tooltip) solid;
+  border: 1px var(--border) solid;
   border-radius: 6px;
   padding: 5px;
   /* position tooltip centered above text*/
@@ -246,10 +251,10 @@ div.desc {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: -10px;
+  border-width: 10px;
   border-style: solid;
-  border-color: var(--tooltip) transparent transparent transparent;
+  border-color: var(--border) transparent transparent transparent;
 }
 .tool:hover .tooltip{
   visibility: visible;

@@ -13,7 +13,7 @@
     <a href="#idea">Idea</a>
     <a href="#wonders">Wonders</a>
     <a href="#team">Team</a>
-    <a href="#contact">Contact</a>
+    <a onclick="toggle('contact')">Contact</a>
   </div>
   <!--The 'content' class is responsible for the card layout.-->
   <div class="content">
@@ -78,6 +78,24 @@
       <i>Due Date: 14th December at 23:55.</i>
     </div>
   </div>
+
+<script>
+// Auto-Grow-TextArea script.
+// Script copyright (C) 2011 www.cryer.co.uk.
+// Script is free to use provided this copyright header is included.
+function AutoGrowTextArea(textField){
+  if (textField.clientHeight < textField.scrollHeight){
+    textField.style.height = textField.scrollHeight + "px";
+    if (textField.clientHeight < textField.scrollHeight){
+      textField.style.height = (textField.scrollHeight * 2 - textField.clientHeight) + "px";
+}}}
+// toggle visiblity of items based on id
+function toggle(id) {
+  var x = document.getElementById(id);
+  up = x.style.display === "none";
+  x.style.display = up? "block" : "none";
+}
+</script>
 </body>
 
 </html>

@@ -125,6 +125,15 @@ input, textarea {
   color: white;
 }
 
+#contact{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+	width: 400px;
+	padding: 15px;
+	height: auto;
+	background: rgba(0,0,0,0.8);
+}
 /*tooltip styles*/
 .tool{
   position: relative;
@@ -143,7 +152,7 @@ input, textarea {
   border: 1px var(--tooltip) solid;
   border-radius: 6px;
   padding: 5px;
-  /* position tooltip cetntred above text*/
+  /* position tooltip centered above text*/
   width: 300px;
   position: absolute;
   z-index: 1;

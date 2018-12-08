@@ -3,7 +3,7 @@
 :root{
   /*main colors (should be neutral or at least muted unless you're a sociopath)*/
   --col0: #1d565e;
-  --col1: rgba(41, 41, 41, 0.8);
+  --col1: rgba(41, 41, 41, 0.9);
   --col2: #fff;
   --col3: rgba(255,255,255,0.1);
 /*accent colors (each should appear ~half as often as the last)*/
@@ -147,6 +147,39 @@ div.desc {
   text-align: center;
 }
 
+/* contact form*/
+#contact{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+	width: 400px;
+	padding: 15px;
+	height: auto;
+	background: var(--tooltip-bg);
+}
+.exit{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+}
+#contact-button{
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  background: var(--tooltip-bg);
+  border-radius: 50px;
+  overflow: auto;
+}
+#contact-button img{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 70%;
+}
 /*tooltip styles*/
 .tool{
   position: relative;
@@ -165,7 +198,7 @@ div.desc {
   border: 1px var(--tooltip) solid;
   border-radius: 6px;
   padding: 5px;
-  /* position tooltip cetntred above text*/
+  /* position tooltip centered above text*/
   width: 300px;
   position: absolute;
   z-index: 1;

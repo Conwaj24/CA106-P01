@@ -79,7 +79,7 @@ h3 {
 table{
   width: 100%;
   border-collapse: collapse;
-  
+
 }
 td, tr, table{
   border: var(--table-border);

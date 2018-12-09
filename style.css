@@ -14,7 +14,7 @@
 
 /*main text colors*/
   --text: var(--col3);
-  --text-alt: var(--col0);
+  --text-alt: var(--col4);
 /*text colors*/
   --link: var(--acc0);
   --h1: var(--text);
@@ -26,6 +26,7 @@
   --citation: var(--acc1);
   --input: var(--text);
   --button: var(--text);
+  --button-hover: var(--text-alt);
 /*fill colors*/
   --main: var(--col0);
   --nav: var(--col1);
@@ -35,7 +36,7 @@
   --input-bg: transparent;
   --border-bg: var(--col4);
   --button-bg: var(--col1);
-  --button-bg-hover: var(--col2);
+  --button-bg-hover: var(--acc0);
 /*currently uncategorized*/
   --lgrad: linear-gradient(to right, var(--col0), var(--col2));
   --font-size: 1em;
@@ -104,11 +105,12 @@ textarea{
   text-align: center;
   width: 150px;
   padding: 2px 6px;
-  -webkit-transition: background 0.2s;
-	transition: background 0.2s;
+  -webkit-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
 }
-.button:hover{
+.button:hover, #contact-button:hover{
   background-color:var(--button-bg-hover);
+  color: var(--button-hover);
 }
 table .button{
   width: 100%;

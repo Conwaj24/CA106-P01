@@ -97,6 +97,7 @@ textarea{
 }
 
 .button{
+  cursor: pointer;
   display: block;
   background-color: var(--button-bg);
   font-size: var(--font-size);
@@ -294,63 +295,52 @@ div.desc {
 .tooltip img{
   width: 100%;
 }
-
+/*slideshow*/
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
 }
-
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+#prev, #next {
+  opacity: 0.8;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: black;
   font-weight: bold;
   font-size: 25px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  transition: 0.2s ease;
+  border-radius: 32px 0px 0px 32px;
+  
   user-select: none;
 }
-/* Position the "next button" to the right */
-.next {
+#next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 32px 32px 0;
 }
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+#prev:hover, #next:hover {
+  background-color: var(--button-bg-hover);
+  color: var(--button-hover);
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

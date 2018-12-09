@@ -26,8 +26,6 @@
   --citation: var(--acc1);
   --input: var(--text);
   --button: var(--text);
-/*main fill colors*/
-  --border: var(--col4);
 /*fill colors*/
   --main: var(--col0);
   --nav: var(--col1);
@@ -35,8 +33,14 @@
   --underline: var(--col1);
   --tooltip-bg: var(--col2);
   --input-bg: transparent;
+  --border-bg: var(--col4);
+  --button-bg: var(--col1);
+  --button-bg-hover: var(--col2);
 /*currently uncategorized*/
   --lgrad: linear-gradient(to right, var(--col0), var(--col2));
+  --font-size: 1em;
+  --border: 2px solid var(--border-bg);
+  --table-border: 2px solid var(--border-bg);
 }
 
 
@@ -46,8 +50,6 @@
   line-height: 1.8;
 }
 body {
-  /* we chose a dark background, for greater readability.*/
-  /* We did not use pure black to avoid eye strain. */
   background-color: var(--main);
   color: var(--text);
   max-width: 700px;
@@ -74,19 +76,47 @@ h3 {
   color: var(--h3);
   border-bottom: 1em var(--underline);
 }
-
+table{
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+td, tr, table{
+  border: var(--table-border);
+  padding: 0px;
+}
 a {
   color: var(--link);
-  padding: 0.5em;
+}
+th{
+	text-align: right;
+}
+textarea{
+	resize: none;
 }
 
 .button{
-  background-color: var(--nav);
-  margin-bottom: 3em;
+  display: block;
+  background-color: var(--button-bg);
+  font-size: var(--font-size);
+  color: var(--button);
+  border: var(--border);
   text-align: center;
+  width: 150px;
+  padding: 2px 6px;
+  -webkit-transition: background 0.2s;
+	transition: background 0.2s;
 }
-button:hover{
-
+.button:hover{
+  background-color:var(--button-bg-hover);
+}
+table .button{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+td .button{
+  border: none;
 }
 .header-img {
   padding: 0 1em 0 0;
@@ -104,18 +134,12 @@ button:hover{
   font-style: italic;
   padding: 0;
 }
-.nav {
-  background-color: var(--nav);
-  margin-bottom: 3em;
-  text-align: center;
-}
-.nav a:hover {
-  background-color: #202020;
-}
+
 section.content {
   background-color: var(--content);
+  border: var(--border);
   margin: 1em;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
 }
 .cite-author {
   padding: 1em;
@@ -123,20 +147,26 @@ section.content {
   color: var(--citation);
 }
 
+/*navigation bar*/
+.nav {
+  background-color: var(--nav);
+  margin-bottom: 3em;
+  text-align: center;
+  height: 32px;
+}
 /*forms */
 form {
   align-content: center;
 }
 input, textarea {
   background-color: var(--input-bg);
+  color: var(--text);
   border: none;
   padding: 0.2em;
   border-bottom: 1px solid var(--input);
   margin-left: 1em;
-}
-.send-btn {
-  background-color: var(--button-bg);
-  color: var(--button);
+  outline: none;
+  resize: none;
 }
 
 /*responsive gallery*/
@@ -235,7 +265,7 @@ div.desc {
   color: var(--tooltip);
   background-color: var(--tooltip-bg);
   text-align: center;
-  border: 1px var(--border) solid;
+  border: var(--border);
   border-radius: 6px;
   padding: 5px;
   /* position tooltip centered above text*/
@@ -254,7 +284,7 @@ div.desc {
   margin-left: -10px;
   border-width: 10px;
   border-style: solid;
-  border-color: var(--border) transparent transparent transparent;
+  border-color: var(--border-bg) transparent transparent transparent;
 }
 .tool:hover .tooltip{
   visibility: visible;

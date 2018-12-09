@@ -15,14 +15,14 @@
 
 That leaves the following:
 
-4. The Mausoleum of Halicarnassus;
-5. The Temple of Artemis at Ephesus;
-6. The Statue of Zeus at Olympia;
+5. The Mausoleum of Halicarnassus;
+6. The Temple of Artemis at Ephesus;
+7. The Statue of Zeus at Olympia;
 
 We also need a member of the team to ensure that the website is conformant, designed well and flows nicely.
 
 
 ## Remember:
-- Watch out for text *and* code plagarism.
+- Watch out for text *and* code plagiarism.
 - We need to keep this site relatively simple.
 - Each section should have a similar look and feel to the next.

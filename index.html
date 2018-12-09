@@ -21,17 +21,17 @@
       They have been endlessly studied and celebrated by those of multiple professions.
     </p>
     <p>
-      There is great history surrounding these wonders with regards to scholars, writers and artists for many years. 
+      There is great history surrounding these wonders with regards to scholars, writers and artists for many years.
       These pieces of architecture were proof of human achievement in the most spectacular way,
       showing the power and influence of each empire that governed them.
     </p>
     <p>
-      Mostly built by the Mediterranean and Middle Eastern empires, 
+      Mostly built by the Mediterranean and Middle Eastern empires,
       with crude tools and manual labour, there is abounding proof of the style and ingenuity of thes vast emprires.
       Today sadly, all but one of these ancient wonders have vanished.
     </p>
   </section>
-  
+
   <!--The 'content' class is responsible for the card layout.-->
   <section class="content">
     <h2 id="idea">What is our idea?</h2>
@@ -55,7 +55,7 @@
       <li><a href="colossus_of_rhodes/index.html">The Colossus of Rhodes</a></li>
     </ul>
   </section>
-  
+
   <section class="content">
     <h3 id="team">Meet our team:</h3>
     <ul>
@@ -67,6 +67,84 @@
     </ul>
   </section>
 
+<div class="slideshow-container">
+  <h2>Image Gallery</h2>
+  <div class="mySlides fade">
+    <img src="img/Lighthouse_purpose.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/construction.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/great_pyramid_1.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/hanging_gardens_of_babylon_1.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/hanging_gardens_of_babylon_2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/insidepy.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/lighthouse_architecture.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img/lighthouse_destruction.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="mausoleum_at_halicarnassus/img/mausolus.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="mausoleum_at_halicarnassus/img/rendition0.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="mausoleum_at_halicarnassus/img/rendition1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="mausoleum_at_halicarnassus/img/rendition2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="mausoleum_at_halicarnassus/img/ruins.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="mausoleum_at_halicarnassus/img/man.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="mausoleum_at_halicarnassus/img/relief0.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!--
   <section id="images" class="gallery content" role="responsive" width="50%">
     <div class="container-content">
       <h2>Image Gallery</h2>
@@ -196,13 +274,13 @@
           </tr>
           <tr>
             <th><label for="contact-phone">Your phone number</label></th>
-            <th><input id="contact-phone" placeholder="phone number" type="tel" name="contact-phone" class="text"></th> 
+            <th><input id="contact-phone" placeholder="phone number" type="tel" name="contact-phone" class="text"></th>
           </tr>
         </table>
         <p>
           <textarea placeholder="Your Message" id="contact-message" name="contact-message" class="text" cols="30" rows="1" onkeyup="AutoGrowTextArea(this)"></textarea>
         </p>
-        <p><input type="submit" class="button" value="Send" /> </p>
+        <p><input type="submit" class="button" value="Send" style="color: white;" /> </p>
       </form>
     </div>
   </div>

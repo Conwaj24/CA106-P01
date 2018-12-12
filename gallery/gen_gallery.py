@@ -56,10 +56,10 @@ img = read_file('img.html')
 imgs = listdir('../'+article+'/img')
 
 imgsets = empty_matrix(columns)
-imgsets[0].append(imgs[0])
+imgsets[0].append(replace(img, '&src', 'img/'+imgs[0]))
 i = 1
 while i < len(imgs):
-    img_i = replace(img, '&src', imgs[i])
+    img_i = replace(img, '&src', 'img/'+imgs[i])
     imgsets[i % columns].append(img_i)
     i += 1
 

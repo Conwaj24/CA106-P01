@@ -65,49 +65,64 @@
   <div class="slideshow-container">
     <h2>Image Gallery</h2>
     <div class="mySlides fade">
-      <img src="LHoA/img/purpose.png" style="width:100%">
+      <img src="LHoA/img/purpose.png" alt="The Lighthouse of Alexandria">
+      <p class="caption">The Lighthouse of Alexandria</p>
     </div>
     <div class="mySlides fade">
-      <img src="GPoG/img/construction.jpg" style="width:100%" alt="A picture showing the purpose of the Lighthouse of Alexandria.">
+      <img src="GPoG/img/construction.jpg" alt="A picture showing the purpose of the Lighthouse of Alexandria.">
+      <p class="caption">A picture showing the purpose of the Lighthouse of Alexandria.</p>
     </div>
     <div class="mySlides fade">
-      <img src="GPoG/img/main.png" style="width:100%" alt="A picture showing historic construction.">
+      <img src="GPoG/img/main.png" alt="A picture showing historic construction.">
+      <p class="caption">A picture showing historic construction.</p>
     </div>
     <div class="mySlides fade">
-      <img src="HGoB/img/1.png" style="width:100%" alt="An image of a great pyramid.">
+      <img src="HGoB/img/1.png" alt="An image of a great pyramid.">
+      <p class="caption">An image of a great pyramid.</p>
     </div>
     <div class="mySlides fade">
-      <img src="HGoB/img/2.jpg" style="width:100%" alt="An image of the hanging gardens of Babylon">
+      <img src="HGoB/img/2.jpg" alt="An image of the hanging gardens of Babylon">
+      <p class="caption">An image of the hanging gardens of Babylon</p>
     </div>
     <div class="mySlides fade">
-      <img src="GPoG/img/inside.png" style="width:100%" alt="An image of the hanging gardens of babylon.">
+      <img src="GPoG/img/inside.png" alt="An image of the hanging gardens of babylon.">
+      <p class="caption">An image of the hanging gardens of babylon.</p>
     </div>
     <div class="mySlides fade">
-      <img src="LHoA/img/architecture.jpg" style="width:100%" alt="An image of the inside of the structure.">
+      <img src="LHoA/img/architecture.jpg" alt="An image of the inside of the structure.">
+      <p class="caption">An image of the inside of the structure.</p>
     </div>
     <div class="mySlides fade">
-      <img src="LHoA/img/ruins.jpg" style="width:100%" alt="An image of the lighthouse architecture.">
+      <img src="LHoA/img/ruins.jpg" alt="An image of the lighthouse architecture.">
+      <p class="caption">An image of the lighthouse architecture.</p>
     </div>
     <div class="mySlides fade">
-      <img src="MaH/img/mausolus.jpg" style="width:100%" alt="An image of the lighthouse destruction.">
+      <img src="MaH/img/mausolus.jpg" alt="An image of the lighthouse destruction.">
+      <p class="caption">An image of the lighthouse destruction.</p>
     </div>
     <div class="mySlides fade">
-      <img src="MaH/img/rendition0.jpg" style="width:100%" alt="An image of the mausoleum.">
+      <img src="MaH/img/rendition0.jpg" alt="An image of the mausoleum.">
+      <p class="caption">An image of the mausoleum.</p>
     </div>
     <div class="mySlides fade">
-      <img src="MaH/img/rendition1.jpg" style="width:100%" alt="A rendition of the Mausoleum.">
+      <img src="MaH/img/rendition1.jpg" alt="A rendition of the Mausoleum.">
+      <p class="caption">A rendition of the Mausoleum.</p>
     </div>
     <div class="mySlides fade">
-      <img src="MaH/img/rendition2.jpg" style="width:100%" alt="The second rendition of the mausoleum.">
+      <img src="MaH/img/rendition2.jpg" alt="The second rendition of the mausoleum.">
+      <p class="caption">The second rendition of the mausoleum.</p>
     </div>
     <div class="mySlides fade">
-      <img src="MaH/img/ruins.jpg" style="width:100%" alt="A third rendition of the mausoleum.">
+      <img src="MaH/img/ruins.jpg" alt="A third rendition of the mausoleum.">
+      <p class="caption">A third rendition of the mausoleum.</p>
     </div>
     <div class="mySlides fade">
-      <img src="MaH/img/man.jpg" style="width:100%" alt="An image of the ruins of the mausoleum.">
+      <img src="MaH/img/man.jpg" alt="An image of the ruins of the mausoleum.">
+      <p class="caption">An image of the ruins of the mausoleum.</p>
     </div>
     <div class="mySlides fade">
-      <img src="MaH/img/relief0.jpg" style="width:100%" alt="An image of the mausoleum.">
+      <img src="MaH/img/relief0.jpg" alt="An image of the mausoleum.">
+      <p class="caption">An image of the mausoleum.</p>
     </div>
     <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a id="next" onclick="plusSlides(1)">&#10095;</a>
@@ -288,31 +303,8 @@
       toggle("contact");
       toggle("contact-button");
     }
-    /* slideshow scripts*/
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-    }
   </script>
+  <script src="slides.js"></script>
 </body>
 
 </html>

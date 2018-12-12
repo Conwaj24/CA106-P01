@@ -328,6 +328,12 @@ div.desc {
 .mySlides {
   display: none;
 }
+.mySlides img {
+  width: 100%;
+}
+.mySlides .caption {
+  text-align: center;
+}
 .flex-container {
   justify-content: center;
   display: flex;

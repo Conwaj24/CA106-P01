@@ -1,6 +1,6 @@
 ## Introduction:
 
-This famous Lighthouse of Alexandria, once named Pharos, was built and designed around the year of 250 B.C. to help those at sea navigate the harbor of Alexandria  in Egypt.  Many had marveled it's percise engineering, which allowed the structure to stand at least 400 feet tall. This lighthouse is in fact, one of the tallest structures in the ancient world. 
+This famous Lighthouse of Alexandria, once named Pharos, was built and designed around the year of 250 B.C. to help those at sea navigate the harbor of Alexandria  in Egypt.  Many had marveled it's precise engineering, which allowed the structure to stand at least 400 feet tall. This lighthouse is in fact, one of the tallest structures in the ancient world.
 
 It was due to this solid engineering, that this building had stayed relatively untouched - for another 1,500 years. The structure was finally decimated by earthquakes in and around 1375 A.D.
 
@@ -8,7 +8,7 @@ It was due to this solid engineering, that this building had stayed relatively u
 
 ####  BC - 250 BC
 
-We are unsure as to a lot of features concerning the Lighthouse of Alexandria, but we do know what it looked like. As an icon of Alexandria, its likeness appeared in many places, including on ancient coins. 
+We are unsure as to a lot of features concerning the Lighthouse of Alexandria, but we do know what it looked like. As an icon of Alexandria, its likeness appeared in many places, including on ancient coins.
 
 Designed by Sostrates of Knidos, the Lighthouse of Alexandria was a strikingly tall structure. The name for this lighthouse comes from its location. The lighthouse was located on the eastern end of the island of Pharos near the entrance of Alexandria’s harbor.
 
@@ -20,7 +20,7 @@ It is unknown what exactly was used to make the fire at the top of the Lighthous
 
 ## Purpose:
 
-The LightHouse of Alexandria was built in the city of Alexandria, Egypt, just 20 miles west of the Nile River. the city of Alexandria was founded in 332 B.C. Alexandria was in prime location to be a major Mediterranean port, and this helped infrastructure in the city. Alexandria was in fact, one of the most important cities of the ancient world, including its famous library.
+The Lighthouse of Alexandria was built in the city of Alexandria, Egypt, just 20 miles west of the Nile River. the city of Alexandria was founded in 332 B.C. Alexandria was in prime location to be a major Mediterranean port, and this helped infrastructure in the city. Alexandria was in fact, one of the most important cities of the ancient world, including its famous library.
 
 One of Alexandria's few negative features was the surrounding rocks and shoals on the approach to Alexandria’s harbor. In one grand statement, Alexander the Great's successor - Ptolemy Soter ordered a lighthouse to be built. This was in fact, one of the first buildings ever built solely to be a lighthouse.
 

@@ -154,6 +154,7 @@ section.content {
 .nav {
   background-color: var(--nav);
   margin-bottom: 3em;
+  padding-right: 1em;
   text-align: center;
   height: 32px;
 }

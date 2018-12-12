@@ -307,6 +307,11 @@ div.desc {
 .mySlides {
   display: none;
 }
+.flex-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
 #prev, #next {
   opacity: 0.8;
   position: absolute;

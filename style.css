@@ -55,7 +55,6 @@ body {
   max-width: 700px;
   margin: auto;
   padding: 1em;
-  text-indent: 1em;
 }
 h1 {
   /* We spent effort looking for compatible colors for the background.*/
@@ -141,7 +140,7 @@ section.content {
   background-color: var(--content);
   border: var(--border);
   margin: 1em;
-  padding: 1em;
+  padding: 3em 2em;
 }
 .cite-author {
   padding: 1em;
@@ -155,7 +154,10 @@ section.content {
   margin-bottom: 3em;
   padding-right: 1em;
   text-align: center;
-  height: 32px;
+  height: 3em;
+}
+.nav a {
+  margin: 0.5em 1em;
 }
 /*forms */
 form {

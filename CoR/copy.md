@@ -1,4 +1,4 @@
-## Construction:
+## Home/Birth
 
 ####  292 BC - 280 BC
 
@@ -8,3 +8,10 @@ The Colossus of Rhodes was a statue of the Helios, Greek God of the sun and patr
 
 ​	The statue is thought to have been located in Mandraki harbor though its exact location is unknown. Amongst that sandstone blocks in the Fortress of St Nicholas near the harbor entrance are curved marble blocks which are thought to be remnants of the statue's pedestal due to their intricacy. Other archaeologists postulate that the statue was built on a hill overlooking the port as part of the Acropolis or Rhodes. Despite its many depictions in paintings and poetry as having done so, it is known not to have stood with one foot on each side of the harbor entrance as this would not have been possible with the technology of the time.
 
+## Life
+
+The Colossus stood proudly over the Mandraki harbor for over 50 years, proudly serving the patron god of Rhodes, Helios. However as fate would have it, in and around 226 B.C.E. Rhodes was struck by a horrific earthquake that toppled the titanic guardian of Rhodes.  
+
+For a long time, the ancient Rhodians considered reconstructing the Colossus however, the priests of Rhodes warned that the Colossus had fallen because they angered Helios and rebuilding it would further his fury.
+
+## Death

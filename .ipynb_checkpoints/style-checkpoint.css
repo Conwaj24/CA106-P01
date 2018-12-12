@@ -154,7 +154,6 @@ section.content {
 .nav {
   background-color: var(--nav);
   margin-bottom: 3em;
-  padding-right: 1em;
   text-align: center;
   height: 32px;
 }
@@ -307,11 +306,6 @@ div.desc {
 .mySlides {
   display: none;
 }
-.flex-container {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-}
 #prev, #next {
   opacity: 0.8;
   position: absolute;
@@ -323,17 +317,17 @@ div.desc {
   font-size: 25px;
   transition: 0.2s ease;
   border-radius: 32px 0px 0px 32px;
-
+  
   user-select: none;
 }
 #next {
   right: 0;
   border-radius: 0 32px 32px 0;
 }
-/*#prev:hover, #next:hover {
+#prev:hover, #next:hover {
   background-color: var(--button-bg-hover);
   color: var(--button-hover);
-}*/
+}
 .active, .dot:hover {
   background-color: #717171;
 }

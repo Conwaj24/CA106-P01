@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400|IBM+Plex+Sans:400,400i,700');
+/*global variables*/
+:root{
+  /*main colors (should be neutral or at least muted unless you're a sociopath)*/
+  --col0: #1d565e;
+  --col1: #333;
+  --col2: rgba(41, 41, 41, 0.9);
+  --col3: #fff;
+  --col4: #000;
+/*accent colors (each should appear ~half as often as the last)*/
+  --acc0: #b2e1e8;
+  --acc1: #b88400;
+  --acc2: #e2ed6a;
+
+/*main text colors*/
+  --text: var(--col3);
+  --text-alt: var(--col4);
+/*text colors*/
+  --link: var(--acc0);
+  --h1: var(--text);
+  --h2: var(--acc0);
+  --h3: var(--text);
+  --tool: var(--text);
+  --tool-outline: var(--acc1);
+  --tooltip: var(--text);
+  --citation: var(--acc1);
+  --input: var(--text);
+  --button: var(--text);
+  --button-hover: var(--text-alt);
+/*fill colors*/
+  --main: var(--col0);
+  --nav: var(--col1);
+  --content: var(--col1);
+  --underline: var(--col1);
+  --tooltip-bg: var(--col2);
+  --input-bg: transparent;
+  --border-bg: var(--col4);
+  --button-bg: var(--col1);
+  --button-bg-hover: var(--acc0);
+/*currently uncategorized*/
+  --lgrad: linear-gradient(to right, var(--col0), var(--col2));
+  --font-size: 1em;
+  --border: 2px solid var(--border-bg);
+  --table-border: 2px solid var(--border-bg);
+}
+
+
+* {
+  /* As you can see here, we used a font downloaded from Google Fonts.*/
+  font-family: "IBM Plex Sans";
+  line-height: 1.8;
+}
+body {
+  background-color: var(--main);
+  color: var(--text);
+  max-width: 700px;
+  margin: auto;
+  padding: 1em;
+  text-indent: 1em;
+}
+h1 {
+  /* We spent effort looking for compatible colors for the background.*/
+  color: var(--h1);
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 400;
+  background-image: var(--lgrad);
+  padding: 1em;
+  margin-bottom: 0;
+}
+h2 {
+  color: var(--h2);
+  margin: 15px, 0px, 5px, 0px;
+  padding: 1em;
+  border-bottom: 1px solid var(--col3)
+}
+h3 {
+  color: var(--h3);
+  border-bottom: 1em var(--underline);
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+
+}
+td, tr, table{
+  border: var(--table-border);
+  padding: 0px;
+}
+a {
+  color: var(--link);
+}
+th{
+	text-align: right;
+}
+textarea{
+	resize: none;
+}
+
+.button{
+  cursor: pointer;
+  display: block;
+  background-color: var(--button-bg);
+  font-size: var(--font-size);
+  color: var(--button);
+  border: var(--border);
+  text-align: center;
+  width: 150px;
+  padding: 2px 6px;
+  -webkit-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+.button:hover, #contact-button:hover{
+  background-color:var(--button-bg-hover);
+  color: var(--button-hover);
+}
+table .button{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+td .button{
+  border: none;
+}
+.header-img {
+  padding: 0 1em 0 0;
+  width: 30%;
+  float: left;
+}
+.header-img:hover {
+  transform: scale(2);
+  margin-left: 0;
+}
+.full-width-img {
+  width: 100%;
+}
+.full-width-img-caption {
+  font-style: italic;
+  padding: 0;
+}
+
+section.content {
+  background-color: var(--content);
+  border: var(--border);
+  margin: 1em;
+  padding: 1em;
+}
+.cite-author {
+  padding: 1em;
+  font-style: italic;
+  color: var(--citation);
+}
+
+/*navigation bar*/
+.nav {
+  background-color: var(--nav);
+  margin-bottom: 3em;
+  text-align: center;
+  height: 32px;
+}
+/*forms */
+form {
+  align-content: center;
+}
+input, textarea {
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: none;
+  padding: 0.2em;
+  border-bottom: 1px solid var(--input);
+  margin-left: 1em;
+  outline: none;
+  resize: none;
+}
+
+/*responsive gallery*/
+.gallery{
+  display: inline-block;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  -ms-flex: 23.5%;
+  flex: 23.5%;
+  max-width: 23.5%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 1200px) {
+  .column {
+      -ms-flex: 48%;
+      flex: 48%;
+      max-width: 48%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .column {
+      -ms-flex: 48%;
+      flex: 48%;
+      max-width: 48%;
+  }
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* contact form*/
+#contact{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+	width: 400px;
+	padding: 15px;
+	height: auto;
+	background: var(--tooltip-bg);
+}
+.exit{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+}
+#contact-button{
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  background: var(--tooltip-bg);
+  border-radius: 50px;
+  overflow: auto;
+}
+#contact-button img{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 70%;
+}
+/*tooltip styles*/
+.tool{
+  position: relative;
+  color: var(--tool);
+}
+.tool::before, .tool::after{
+  content: "|";
+  font-weight: bold;
+  color: var(--tool-outline);
+}
+.tool .tooltip{
+  visibility: hidden;
+  color: var(--tooltip);
+  background-color: var(--tooltip-bg);
+  text-align: center;
+  border: var(--border);
+  border-radius: 6px;
+  padding: 5px;
+  /* position tooltip centered above text*/
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -150px; /*half of width*/
+}
+.tool .tooltip::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--border-bg) transparent transparent transparent;
+}
+.tool:hover .tooltip{
+  visibility: visible;
+}
+.tooltip img{
+  width: 100%;
+}
+/*slideshow*/
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+#prev, #next {
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.2s ease;
+  border-radius: 32px 0px 0px 32px;
+  
+  user-select: none;
+}
+#next {
+  right: 0;
+  border-radius: 0 32px 32px 0;
+}
+#prev:hover, #next:hover {
+  background-color: var(--button-bg-hover);
+  color: var(--button-hover);
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

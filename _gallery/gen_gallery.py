@@ -1,3 +1,6 @@
+#gallery generation script by Jordan
+#note that this script is made with Python3, Python2 may cause errors
+
 import os
 from os import listdir
 import sys
@@ -46,8 +49,10 @@ def replace(s, f, r, all=True):
 
 def empty_matrix(x=0, y=0):
     out = []
-    for i in range(x):
+    i = 0
+    while i < x:
         out.append([])
+        i += 1
     return out
 
 gallery = read_file('gallery.html')

@@ -135,7 +135,14 @@ td .button{
   font-style: italic;
   padding: 0;
 }
-
+.centered-list {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.centered-title {
+  text-align: center;
+}
 section.content {
   background-color: var(--content);
   border: var(--border);

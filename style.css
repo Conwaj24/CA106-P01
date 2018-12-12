@@ -44,7 +44,6 @@
   --table-border: 2px solid var(--border-bg);
 }
 
-
 * {
   /* As you can see here, we used a font downloaded from Google Fonts.*/
   font-family: "IBM Plex Sans";
@@ -95,7 +94,7 @@ th{
 textarea{
 	resize: none;
 }
-
+/* #region classes */
 .button{
   cursor: pointer;
   display: block;
@@ -172,8 +171,8 @@ input, textarea {
   outline: none;
   resize: none;
 }
-
-/*responsive gallery*/
+/* #endregion */
+/*#region responsive gallery*/
 .gallery{
   display: inline-block;
 }
@@ -220,8 +219,8 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
-
-/* contact form*/
+/* #endregion */
+/*#region contact form*/
 #contact{
 	position: fixed;
     bottom: 0;
@@ -254,7 +253,8 @@ div.desc {
   margin-top: 20px;
   width: 70%;
 }
-/*tooltip styles*/
+/* #endregion */
+/*#region tooltip styles*/
 .tool{
   position: relative;
   color: var(--tool);
@@ -296,7 +296,8 @@ div.desc {
 .tooltip img{
   width: 100%;
 }
-/*slideshow*/
+/* #endregion */
+/*#region slideshow*/
 * {box-sizing:border-box}
 
 .slideshow-container {
@@ -351,3 +352,4 @@ div.desc {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* #endregion */

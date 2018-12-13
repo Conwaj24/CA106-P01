@@ -5,9 +5,8 @@ import os
 from os import listdir
 import sys
 
-args = sys.argv[1:]
-article = args[0]
-columns = int(args[1])
+article = sys.argv[1]
+columns = 4
 
 def read_file(s):
     out = ''

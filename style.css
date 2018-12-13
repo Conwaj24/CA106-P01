@@ -163,12 +163,10 @@ section.content {
   border-left: none;
   background-color: var(--nav);
   text-align: center;
-  height: 3em;
 }
 .nav a {
   border-bottom: none;
   border-right: none;
-  padding-top: 0.4em
 }
 .flex-container {
   justify-content: center;

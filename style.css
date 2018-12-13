@@ -86,6 +86,7 @@ td, tr, table{
 }
 a {
   color: var(--link);
+  overflow: hidden;
 }
 th{
 	text-align: right;

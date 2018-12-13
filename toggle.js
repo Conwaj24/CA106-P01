@@ -15,7 +15,7 @@ function swapNext(id){
     x.style.display = "block";
 }
 function swapPrev(id){
-    var x = document.getElementById(id).prevSibling;
+    var x = document.getElementById(id).previousSibling;
     toggle(id);
     x.style.display = "block";
 }

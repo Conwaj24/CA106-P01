@@ -97,7 +97,7 @@
 
   <section id="contact" class="content" style="display: none">
     <div class="exit button" onclick="contact()">
-      <img src="_img/cross.svg" class="exit">
+        <img src="_img/cross.svg" alt="Exit">
     </div>
     <div class="container-content">
       <h2>Contact Me</h2>
@@ -131,53 +131,8 @@
   </div>
   </div>
 
-  <script type="text/javascript">
-    // Auto-Grow-TextArea script.
-    // Script copyright (C) 2011 www.cryer.co.uk.
-    // Script is free to use provided this copyright header is included.
-    function AutoGrowTextArea(textField) {
-      if (textField.clientHeight < textField.scrollHeight) {
-        textField.style.height = textField.scrollHeight + "px";
-        if (textField.clientHeight < textField.scrollHeight) {
-          textField.style.height = (textField.scrollHeight * 2 - textField.clientHeight) + "px";
-        }
-      }
-    }
-    // toggle visiblity of items based on id
-    function toggle(id) {
-      var x = document.getElementById(id);
-      up = x.style.display === "none";
-      x.style.display = up ? "block" : "none";
-    }
-    function contact() {
-      toggle("contact");
-      toggle("contact-button");
-    }
-    /* slideshow scripts*/
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-    }
-  </script>
+  <script src="autogrow.js"></script>
+  <script src="toggle.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,14 @@
 ## Introduction:
 
-The Great Pyramid of Giza, built between is the largest pyramid in the Giza Pyramid Complex, and of it's kind. Originally built to store the sarcophagi of the Fourth Dynasty Egyptian pharaoh; Khufu, archaeologists and experts have discovered important papyri scriptures, and ruins which have lead to the recovery of, otherwise lost, ancient Egyptian history. Theorists and specialists alike have questioned **The Great Pyramid of Giza**, due to it's magnitude in size, as methods of construction at the time were quite limited, thus making it one of the most remarkable wonders of the seven.
+The Great Pyramid of Giza, built between is the largest pyramid in the Giza Pyramid Complex, and of it's kind. Originally built to store the sarcophagi of the Fourth Dynasty Egyptian pharaoh; Khufu, archaeologists and experts have discovered important papyri scriptures, and ruins which have lead to the recovery of, otherwise lost, ancient Egyptian history.
+
+Theorists and specialists alike have questioned The Great Pyramid of Giza, due to it's magnitude in size, as methods of construction at the time were quite limited, thus making it one of the most remarkable wonders of the seven.
 
 ## Construction:
 
 #### 2580 BC - 2560 BC
 
-The **Great Pyramid of Giza** was built over the span of 20 years, initially as a tomb for the great pharaoh; Kufu, who's sarcophagus would be deposited within one of the chambers constructed inside the pyramid. Specialists have estimated that the pyramid upon construction, measured 146.5 meters in height. However due to erosion, the pyramid decreased to the current height of the pyramid; 138.8 meters.
+The Great Pyramid of Giza was built over the span of 20 years, initially as a tomb for the great pharaoh; Kufu, who's sarcophagus would be deposited within one of the chambers constructed inside the pyramid. Specialists have estimated that the pyramid upon construction, measured 146.5 meters in height. However due to erosion, the pyramid decreased to the current height of the pyramid; 138.8 meters.
 
 Based upon the estimation for the time-frame of the construction, 808 tonnes of stone had to be laid down everyday. As the pyramid consists of 2.3 million blocks, that would mean that 12 blocks of stone had to be laid down per hour for a span of 20 years. The structure, made of both granite and limestone, is considered to be the most mysterious wonder out of the seven as it's secrets involving how exactly it was built remain hidden to this day. 
 

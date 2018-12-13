@@ -27,6 +27,7 @@
   --input: var(--text);
   --button: var(--text);
   --button-hover: var(--text-alt);
+  --button-active: var(--text);
 /*fill colors*/
   --main: var(--col0);
   --nav: var(--col1);
@@ -37,6 +38,7 @@
   --border-bg: var(--col4);
   --button-bg: var(--col1);
   --button-bg-hover: var(--acc0);
+  --lightbox: var(--col2);
 /*currently uncategorized*/
   --lgrad: linear-gradient(to right, var(--col0), var(--col2));
   --font-size: 1em;
@@ -158,14 +160,23 @@ section.content {
 
 /*navigation bar*/
 .nav {
+  border: var(--border);
+  border-top: none;
+  border-left: none;
   background-color: var(--nav);
-  margin-bottom: 3em;
-  padding-right: 1em;
   text-align: center;
-  height: 3em;
 }
 .nav a {
-  margin: 0.5em 1em;
+  border-bottom: none;
+  border-right: none;
+}
+.flex-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.flex-container .button{
+  flex: 1;
 }
 /*forms */
 form {
@@ -194,35 +205,36 @@ input, textarea {
   padding: 0 4px;
 }
 .column {
-  -ms-flex: 23.5%;
-  flex: 23.5%;
-  max-width: 23.5%;
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
   padding: 0 4px;
 }
-
 .column img {
   margin-top: 8px;
+  cursor: pointer; 
+  width:100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 1200px) {
   .column {
-      -ms-flex: 48%;
-      flex: 48%;
-      max-width: 48%;
+      -ms-flex: 33%;
+      flex: 33%;
+      max-width: 33%;
   }
 }
 @media screen and (max-width: 900px) {
   .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .column {
-      -ms-flex: 48%;
-      flex: 48%;
-      max-width: 48%;
   }
 }
 div.desc {
@@ -241,11 +253,16 @@ div.desc {
 	background: var(--tooltip-bg);
 }
 .exit{
+  z-index: 2;
   position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 20px;
-  height: 20px;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.exit img{
+  width:100%;
+  height: 100%;
 }
 #contact-button{
   position: fixed;
@@ -264,7 +281,7 @@ div.desc {
   width: 70%;
 }
 /* #endregion */
-/*#region tooltip styles*/
+/*#region tooltips*/
 .tool{
   position: relative;
   color: var(--tool);
@@ -335,11 +352,6 @@ div.desc {
 .mySlides .caption {
   text-align: center;
 }
-.flex-container {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-}
 #prev, #next {
   position: absolute;
   top: 50%;
@@ -362,7 +374,8 @@ div.desc {
   color: var(--button-hover);
 }*/
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: var(--text);
+  color: var(--text-alt)
 }
 .fade {
   -webkit-animation-name: fade;
@@ -377,5 +390,61 @@ div.desc {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+/* #endregion */
+/*#region lightbox*/
+#lightbox {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  overflow: auto;
+  background-color: var(--lightbox);
+}
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  height: 80vh;
+  max-height: 700px;
+}
+.modal-content img{
+  display: block;
+  margin: auto;
+}
+.prev, .next {
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.2s ease;
+  border-radius: 32px 0px 0px 32px;
+
+  user-select: none;
+}
+.next {
+  right: 10px;
+  border-radius: 0 32px 32px 0;
+}
+.prev{
+  left: 10px;
+}
+.numbertext {
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
 }
 /* #endregion */

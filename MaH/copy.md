@@ -1,21 +1,26 @@
-The Hanging Gardens of Babylon resembled a large hill that contained many species of shrubs and greenery. Interestingly, the exact location of these gardens has not yet been established, and some theorize that the hanging gardens were only fiction.
+## Introduction:
 
-​	Clearly, the Hanging Gardens of Babylon is the most magnificent and beautiful wonder out of the seven, as the marvel of engineering in providing water to a large set of lush flora in the middle of a desert is still something historians puzzle over today. Pictured above is an artists' rendition of what the gardens may have looked like.
+The Mausoleum at Halicarnassus was an above-ground tomb built by and for the Persian satrap Mausolus in the lavish city founded under his and his father's conquest. While originally named after Mausolus, the term Mausoleum has since come to mean any above ground tomb.
 
 ## Construction:
 
-####  605 BC - 562 BC
+####  353 BC - 350 BC
 
-King Nebuchadnezzar II is told to have built the Hanging Gardens for his wife, Queen Amtynis. It is said that she longed to see the green hills of her homeland.<sup>[1]</sup> Queen Amtynis found the barren and flat terrain of Mesopotamia depressing.
+Construction of the tomb likely began before the death of Mausolus. Upon his death the project was continued by his sister-wife Artemisia who also died before the project's completion, living only two years after her husband.
 
-​	King Nebuchadnezzar ruled from 605 BC to 562 BC. The King was known to have ordered the building of many various temples and palaces. This was the height of the city's power and influence and King Nebuchadnezzar is known to have constructed an astonishing array of temples, streets, palaces and walls.
+The tomb was built on a stone platform at the center an enclosed courtyard on a hill which overlooked the city. According to a primary source, the building was 46 meters tall from base to peak with a ceiling height of and had a perimeter of 125 meters not including the 36 columns surrounding the tomb. However it's size was not what was remarkable about the structure, rather it's near total adornment with statues and sculptures. The pyramidal peak of the building held a statue of Mausolus and Artemisia in a chariot drawn by four horses. The walls had reliefs of action scenes and battles some of which included such mythical creatures as centaurs and lapiths, while others depicted historical battles. The were a number of larger-than-life free standing sculptures of men, lions and other beasts though few of these survive today.
+
+## History:
+
+It is thought likely that adornment of the monument was continued by Mausolus's descendants as historians find it unlikely that all of the work could have been accomplished in three years. Most of what historians know about the construction comes from historical writings rather than ruins and as such there are many interpretations of what the Mausoleum may have looked like.
+
+The Monument stood for sixteen centuries, surviving both the conquest of Alexander the Great and numerous pirate raids.
 
 ## Destruction:
 
-#### Date unknown
+It is unknown exactly how the Mausoleum fell to ruin but it is commonly thought that it was destroyed by a series of earthquakes sometime after Eustathius's writing of the monument in the 12th century AD. From the writings of the Kights of St. John of Jerusalem it is known that only the base of the Tomb was recognizable by their arrival in 1404 AD.
 
-The Hanging Gardens of Babylon suffers the peculiar case of being the only Wonder of the World whose location hasn't yet been established, due to a lack of archaeological evidence.
+The remains of the mausoleum were used by the Knights to fortify Bodrum Castle in 1494. Many reliefs were also recovered from the rubble to be used as decoration. The castle was further fortified in 1522 by the same means following rumors of a Turkish invasion.
 
-​	Some hypothesize that the Gardens did not exist at all, rather being a legendary work of fiction, described in poetry. Some of the basis for this theory comes from the fact that none of the usual Babylonian texts, which are normally complete, make any mention of the Garden. Others still believe that the Hanging Gardens were destroyed in an earthquake during the second century B.C.. If so, the ruins would have eroded away with the rains and no evidence would be left, explaining why the archaeological evidence is so difficult to gather.
 
-​	Whatever did happen to the Hanging Gardens, they were an impressive feat far ahead of their time, highlighting human creativity and ambition, even in ages of limited ability and great difficulty.
+

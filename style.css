@@ -158,14 +158,25 @@ section.content {
 
 /*navigation bar*/
 .nav {
+  border: var(--border);
+  border-top: none;
+  border-left: none;
   background-color: var(--nav);
-  margin-bottom: 3em;
-  padding-right: 1em;
   text-align: center;
   height: 3em;
 }
 .nav a {
-  margin: 0.5em 1em;
+  border-bottom: none;
+  border-right: none;
+  padding-top: 0.4em
+}
+.flex-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.flex-container .button{
+  flex: 1;
 }
 /*forms */
 form {
@@ -340,11 +351,6 @@ div.desc {
 }
 .mySlides .caption {
   text-align: center;
-}
-.flex-container {
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
 }
 #prev, #next {
   position: absolute;

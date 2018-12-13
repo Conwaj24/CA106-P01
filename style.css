@@ -199,9 +199,10 @@ input, textarea {
   max-width: 23.5%;
   padding: 0 4px;
 }
-
 .column img {
   margin-top: 8px;
+  cursor: pointer; 
+  width:100%;
   vertical-align: middle;
 }
 @media screen and (max-width: 1200px) {
@@ -216,13 +217,6 @@ input, textarea {
       -ms-flex: 100%;
       flex: 100%;
       max-width: 100%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .column {
-      -ms-flex: 48%;
-      flex: 48%;
-      max-width: 48%;
   }
 }
 div.desc {

@@ -380,12 +380,9 @@ div.desc {
 }
 /* #endregion */
 /*#region lightbox*/
-
 #lightbox {
-  display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
@@ -395,14 +392,14 @@ div.desc {
 }
 .modal-content {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
   height: 80vh;
   max-height: 700px;
 }
 .modal-content img{
-  height: inherit;
+  display: block;
+  margin: auto;
 }
 .prev, .next {
   opacity: 0.8;
@@ -434,17 +431,5 @@ div.desc {
   background-color: black;
   padding: 2px 16px;
   color: white;
-}
-img.demo {
-  opacity: 0.6;
-}
-.active, .demo:hover {
-  opacity: 1;
-}
-img.hover-shadow {
-  transition: 0.3s;
-}
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* #endregion */

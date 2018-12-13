@@ -281,29 +281,8 @@
     <i>CA106: Web Design Project - Group 36 Due Date: 14th December at 23:55.</i>
   </div>
 
-  <script type="text/javascript">
-    // Auto-Grow-TextArea script.
-    // Script copyright (C) 2011 www.cryer.co.uk.
-    // Script is free to use provided this copyright header is included.
-    function AutoGrowTextArea(textField) {
-      if (textField.clientHeight < textField.scrollHeight) {
-        textField.style.height = textField.scrollHeight + "px";
-        if (textField.clientHeight < textField.scrollHeight) {
-          textField.style.height = (textField.scrollHeight * 2 - textField.clientHeight) + "px";
-        }
-      }
-    }
-    // toggle visiblity of items based on id
-    function toggle(id) {
-      var x = document.getElementById(id);
-      up = x.style.display === "none";
-      x.style.display = up ? "block" : "none";
-    }
-    function contact() {
-      toggle("contact");
-      toggle("contact-button");
-    }
-  </script>
+  <script src="toggle.js"></script>
+  <script src="autogrow.js"></script>
   <script src="slides.js"></script>
 </body>
 

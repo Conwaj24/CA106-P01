@@ -23,15 +23,17 @@
     <div class="content row">
       <div class="column">
   <img src="img/architecture.jpg" onclick="lightbox('lightbox-architecture')">
+<img src="img/purpose.png" onclick="lightbox('lightbox-purpose')">
+</div>
+<div class="column">
+  <img src="img/book-of-wonders.jpg" onclick="lightbox('lightbox-book-of-wonders')">
+<img src="img/ruins.jpg" onclick="lightbox('lightbox-ruins')">
 </div>
 <div class="column">
   <img src="img/main.png" onclick="lightbox('lightbox-main')">
 </div>
 <div class="column">
-  <img src="img/purpose.png" onclick="lightbox('lightbox-purpose')">
-</div>
-<div class="column">
-  <img src="img/ruins.jpg" onclick="lightbox('lightbox-ruins')">
+  <img src="img/mosaic.jpg" onclick="lightbox('lightbox-mosaic')">
 </div>
     </div>
   </section>
@@ -46,7 +48,7 @@
     </div>
     
     <div class="modal-content">
-        <div class="numbertext">1/ 4</div>
+        <div class="numbertext">1/ 6</div>
         <img src="img/architecture.jpg" style="height:100%">
     </div>
 
@@ -56,6 +58,23 @@
             A picture of the architecture of the Lighthouse of Alexandria.
         </p>
     </div>
+</div><div class="modal-content" id="lightbox-book-of-wonders" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-book-of-wonders')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">2/ 6</div>
+        <img src="img/book-of-wonders.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-book-of-wonders')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-book-of-wonders')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            The lighthouse as depicted in the Book of Wonders, a late 14th century Arabic text.
+        </p>
+    </div>
 </div><div class="modal-content" id="lightbox-main" style="display:none;">
     
     <div class="exit button" onclick="lightbox('lightbox-main')">
@@ -63,7 +82,7 @@
     </div>
     
     <div class="modal-content">
-        <div class="numbertext">2/ 4</div>
+        <div class="numbertext">3/ 6</div>
         <img src="img/main.png" style="height:100%">
     </div>
 
@@ -73,6 +92,23 @@
             A picture of the Lighthouse of Alexandria.
         </p>
     </div>
+</div><div class="modal-content" id="lightbox-mosaic" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-mosaic')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">4/ 6</div>
+        <img src="img/mosaic.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-mosaic')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-mosaic')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            A mosaic depicting the Pharos of Alexandria, from Olbia, Libya.
+        </p>
+    </div>
 </div><div class="modal-content" id="lightbox-purpose" style="display:none;">
     
     <div class="exit button" onclick="lightbox('lightbox-purpose')">
@@ -80,7 +116,7 @@
     </div>
     
     <div class="modal-content">
-        <div class="numbertext">3/ 4</div>
+        <div class="numbertext">5/ 6</div>
         <img src="img/purpose.png" style="height:100%">
     </div>
 
@@ -97,7 +133,7 @@
     </div>
     
     <div class="modal-content">
-        <div class="numbertext">4/ 4</div>
+        <div class="numbertext">6/ 6</div>
         <img src="img/ruins.jpg" style="height:100%">
     </div>
 

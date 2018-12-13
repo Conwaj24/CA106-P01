@@ -14,6 +14,7 @@ def read_file(s):
     with open(s) as f:
         out = f.read()
     return out
+
 def list2string(a):
     s = ''
     i = 0

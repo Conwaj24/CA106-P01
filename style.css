@@ -263,7 +263,7 @@ div.desc {
   width: 70%;
 }
 /* #endregion */
-/*#region tooltip styles*/
+/*#region tooltips*/
 .tool{
   position: relative;
   color: var(--tool);

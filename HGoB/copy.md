@@ -1,3 +1,11 @@
+## Introduction:
+
+The Hanging Gardens of Babylon resembled a large hill that contained many species of shrubs and greenery^[1]^. Interestingly, the exact location of these gardens have not yet been established, and some theorize that the hanging gardens were only fiction.
+
+Clearly, the Hanging Gardens of Babylon is the most magnificent and beautiful wonder out of the seven, as the marvel of engineering in providing water to a large set of lush flora in the middle of a desert is still something historians puzzle over today.
+
+Pictured above is an artists' rendition of what the gardens may have looked like.
+
 ## Construction:
 
 ####  605 BC - 562 BC
@@ -5,8 +13,6 @@
 King Nebuchadnezzar II is told to have built the Hanging Gardens for his wife, Queen Amtynis. It is said that she longed to see the green hills of her homeland. Queen Amtynis found the barren and flat terrain of Mesopotamia depressing.
 
 ​	King Nebuchadnezzar ruled from 605 BC to 562 BC. The King was known to have ordered the building of many various temples and palaces. This was the height of the city's power and influence and King Nebuchadnezzar is known to have constructed an astonishing array of temples, streets, palaces and walls.
-
-The Hanging Gardens of Babylon resembled a large hill that contained many species of shrubs and greenery. Interestingly, the exact location of these gardens has not yet been established, and some theorize that the hanging gardens were only fiction.
 
 ## Architecture & Engineering:
 
@@ -18,8 +24,6 @@ A fascinating part of the Hanging Gardens of Babylon is the feat of engineering 
 Another fascinating aspect of the construction was the material used. A type of brick made of clay and chopped straw was normally used in the construction of buildings in Babylon, but this material couldn't hold up against the water pumped into the gardens.
 
 ​	Stone was scarce, so to combat this issue they laid multiple layers of asphalt and tiles, on top of which they placed a layer of lead. This formed the foundation on which they put dirt and planted the trees which impressed many Babylonians in its time.
-
-Clearly, the Hanging Gardens of Babylon is the most magnificent and beautiful wonder out of the seven, as the marvel of engineering in providing water to a large set of lush flora in the middle of a desert is still something historians puzzle over today.
 
 ## Destruction:
 

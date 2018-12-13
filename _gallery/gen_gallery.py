@@ -63,6 +63,9 @@ gallery = read_file('gallery.html')
 column = read_file('column.html')
 img = read_file('img.html')
 lightbox = read_file('lightbox.html')
+prev = read_file('prev.html')
+next = read_file('next.html')
+
 imgs = listdir('../'+article+'/img')
 
 imgsets = empty_matrix(columns)
@@ -85,7 +88,15 @@ html = replace(gallery, '&column', columnset, False)
 
 lightboxset = ''
 for i in range(len(imgs)):
-    lb = replace(lightbox, '&id', img_id(imgs[i]))
+    lb = lightbox
+    
+    prv = prev if 0 < i else ''
+    lb = replace(lb, '&prev', prv, False)
+
+    nxt = next if i < len(imgs)-1 else ''
+    lb = replace(lb, '&next', nxt, False)
+
+    lb = replace(lb, '&id', img_id(imgs[i]))
     lb = replace(lb, '&indx', str(i+1), False)
     lb = replace(lb, '&len', str(len(imgs)), False)
     lb = replace(lb, '&src', 'img/'+imgs[i])

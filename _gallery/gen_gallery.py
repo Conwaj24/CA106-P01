@@ -67,6 +67,13 @@ next = read_file('next.html')
 
 imgs = listdir('../'+article+'/img')
 
+descs = {}
+a = listdir('../'+article+'/desc')
+for desc in a:
+    key = desc.split('.')[0]
+    val = read_file('../'+article+'/desc/'+desc)
+    descs[key] = val
+
 imgsets = empty_matrix(columns)
 i = 0
 while i < len(imgs):
@@ -99,6 +106,13 @@ for i in range(len(imgs)):
     lb = replace(lb, '&indx', str(i+1), False)
     lb = replace(lb, '&len', str(len(imgs)), False)
     lb = replace(lb, '&src', 'img/'+imgs[i])
+
+    key = imgs[i].split('.')[0]
+    if key in descs:
+        lb = replace(lb, '&desc', descs[key])
+    else:
+        lb = replace(lb, '&desc', '')
+
     lightboxset += lb
 
 html = replace(html, '&lightbox', lightboxset, False)

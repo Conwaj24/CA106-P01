@@ -27,6 +27,7 @@
   --input: var(--text);
   --button: var(--text);
   --button-hover: var(--text-alt);
+  --button-active: var(--text);
 /*fill colors*/
   --main: var(--col0);
   --nav: var(--col1);
@@ -372,7 +373,8 @@ div.desc {
   color: var(--button-hover);
 }*/
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: var(--text);
+  color: var(--text-alt)
 }
 .fade {
   -webkit-animation-name: fade;

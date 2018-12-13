@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Group Portfolio CA106</title>
 </head>
@@ -10,23 +11,14 @@
   <h1>The Seven Wonders of the World</h1>
   <!--The navbar is a container for navigation links to the other sections.-->
   <div class="flex-container">
-    <a href="#idea" class="button">Idea</a>
     <a href="#wonders" class="button">Wonders</a>
     <a href="#team" class="button">Team</a>
+    <a href="#img-gallery" class="button">Gallery</a>
     <a onclick="contact()" class="button">Contact</a>
   </div>
-  <!--
-  <table class="nav">
-    <tr>
-      <td><a href="#idea" class="button">Idea</a></td>
-      <td><a href="#wonders" class="button">Wonders</a></td>
-      <td><a href="#team" class="button">Team</a></td>
-      <td><a onclick="contact()" class="button">Contact</a></td>
-    </tr>
-  </table>
--->
+
   <section class="content">
-    <h2>What are the Seven Wonders?</h2>
+    <h2 class="centered-title">What are the Seven Wonders?</h2>
     <p>These ancient structures were marvels of an age of progress and exploration.
       they have been endlessly studied and celebrated by those of multiple professions.
     </p>
@@ -44,20 +36,13 @@
 
   <!--The 'content' class is responsible for the card layout.-->
   <section class="content">
-    <h2 id="idea">What is our idea?</h2>
-    <p>Our idea is illustrating the history of each wonder under the following headings:</p>
-    <!--The below is an un-ordered list of the general outline for each section.-->
-    <ul>
-      <li>Birth (construction, inspiration)</li>
-      <li>Life (historical accounts, purpose)</li>
-      <li>Death (modern day where destruction not applicable e.g. pyramids)</li>
-      <li>Undecided (sources, modern day, image gallery)</li>
-    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K9si0lLHS9s" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </section>
 
   <section class="content">
-    <h2 id="wonders">Here are our chosen wonders:</h2>
-    <ul>
+    <h2 id="wonders" class="centered-title">The Wonders</h2>
+    <ul class="centered-list">
       <li><a href="LHoA/index.html">Lighthouse of Alexandria</a></li>
       <li><a href="HGoB/index.html">Hanging Gardens of Babylon</a></li>
       <li><a href="GPoG/index.html">The Great Pyramid of Giza</a></li>
@@ -67,8 +52,8 @@
   </section>
 
   <section class="content">
-    <h3 id="team">Meet our team:</h3>
-    <ul>
+    <h3 id="team" class="centered-title">Meet our team</h3>
+    <ul class="centered-list">
       <li>Brendan Mannion</li>
       <li>Maciej Swierad</li>
       <li>Jordan Conway McLaughlin</li>
@@ -77,60 +62,81 @@
     </ul>
   </section>
 
-<div class="slideshow-container">
-  <h2>Image Gallery</h2>
-  <div class="mySlides fade">
-    <img src="mausoleum_at_halicarnassus/img/relief0.jpg" style="width:100%" alt="An image of the mausoleum.">
-    <img src="LHoA/img/purpose.png" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="GPoG/img/construction.jpg" style="width:100%" alt="A picture showing the purpose of the Lighthouse of Alexandria.">
-  </div>
-  <div class="mySlides fade">
-    <img src="GPoG/img/main.png" style="width:100%" alt="A picture showing historic construction.">
-  </div>
-  <div class="mySlides fade">
-    <img src="HGoB/img/1.png" style="width:100%" alt="An image of a great pyramid.">
-  </div>
-  <div class="mySlides fade">
-    <img src="HGoB/img/2.jpg" style="width:100%" alt="An image of the hanging gardens of Babylon">
-  </div>
-  <div class="mySlides fade">
-    <img src="GPoG/img/inside.png" style="width:100%" alt="An image of the hanging gardens of babylon.">
-  </div>
-  <div class="mySlides fade">
-    <img src="LHoA/img/architecture.jpg" style="width:100%" alt="An image of the inside of the structure.">
-  </div>
-  <div class="mySlides fade">
-    <img src="LHoA/img/ruins.jpg" style="width:100%" alt="An image of the lighthouse architecture.">
-  </div>
-  <div class="mySlides fade">
-    <img src="MaH/img/mausolus.jpg" style="width:100%" alt="An image of the lighthouse destruction.">
-  </div>
-  <div class="mySlides fade">
-    <img src="MaH/img/rendition0.jpg" style="width:100%" alt="An image of the mausoleum.">
-  </div>
-  <div class="mySlides fade">
-    <img src="MaH/img/rendition1.jpg" style="width:100%" alt="A rendition of the Mausoleum.">
-  </div>
-  <div class="mySlides fade">
-    <img src="MaH/img/rendition2.jpg" style="width:100%" alt="The second rendition of the mausoleum.">
-  </div>
-  <div class="mySlides fade">
-    <img src="MaH/img/ruins.jpg" style="width:100%" alt="A third rendition of the mausoleum.">
-  </div>
-  <div class="mySlides fade">
-    <img src="MaH/img/man.jpg" style="width:100%" alt="An image of the ruins of the mausoleum.">
-  </div>
-  <div class="mySlides fade">
-    <img src="MaH/img/relief0.jpg" style="width:100%" alt="An image of the mausoleum.">
-  </div>
 
-  <a class="button" id="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="button" id="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+  <div class="slideshow-container">
+    <h2 id="img-gallery">Image Gallery</h2>
+    <div class="mySlides fade">
+      <img src="LHoA/img/purpose.png" alt="The Lighthouse of Alexandria">
+      <p class="caption">The Lighthouse of Alexandria</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="GPoG/img/construction.jpg" alt="A picture showing the purpose of the Lighthouse of Alexandria.">
+      <p class="caption">A picture showing the purpose of the Lighthouse of Alexandria.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="GPoG/img/main.png" alt="A picture showing historic construction.">
+      <p class="caption">A picture showing historic construction.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="HGoB/img/1.png" alt="An image of a great pyramid.">
+      <p class="caption">An image of a great pyramid.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="HGoB/img/2.jpg" alt="An image of the hanging gardens of Babylon">
+      <p class="caption">An image of the hanging gardens of Babylon</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="GPoG/img/inside.png" alt="An image of the hanging gardens of babylon.">
+      <p class="caption">An image of the hanging gardens of babylon.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="LHoA/img/architecture.jpg" alt="An image of the inside of the structure.">
+      <p class="caption">An image of the inside of the structure.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="LHoA/img/ruins.jpg" alt="An image of the lighthouse architecture.">
+      <p class="caption">An image of the lighthouse architecture.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="MaH/img/mausolus.jpg" alt="An image of the lighthouse destruction.">
+      <p class="caption">An image of the lighthouse destruction.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="MaH/img/rendition0.jpg" alt="An image of the mausoleum.">
+      <p class="caption">An image of the mausoleum.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="MaH/img/rendition1.jpg" alt="A rendition of the Mausoleum.">
+      <p class="caption">A rendition of the Mausoleum.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="MaH/img/rendition2.jpg" alt="The second rendition of the mausoleum.">
+      <p class="caption">The second rendition of the mausoleum.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="MaH/img/ruins.jpg" alt="A third rendition of the mausoleum.">
+      <p class="caption">A third rendition of the mausoleum.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="MaH/img/man.jpg" alt="An image of the ruins of the mausoleum.">
+      <p class="caption">An image of the ruins of the mausoleum.</p>
+    </div>
+    <div class="mySlides fade">
+      <img src="MaH/img/relief0.jpg" alt="An image of the mausoleum.">
+      <p class="caption">An image of the mausoleum.</p>
+    </div>
+    <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a id="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <section class="content">
+    <h3 id="mistakes">Contact</h3>
+    <p>
+      To contact us and for information regarding our mistakes and contributions, visit <a href="contact.html">the
+        contact page.</a>
+    </p>
+  </section>
 
-<!--
+  <!--
   <section id="images" class="gallery content" role="responsive" width="50%">
     <div class="container-content">
       <h2>Image Gallery</h2>
@@ -236,91 +242,69 @@
   </div>
 </div>-->
 
-<div class="button" id="contact-button" onclick="contact()">
-  <img src="_img/speech-bubble.svg">
-</div>
+  <div class="button" id="contact-button" onclick="contact()">
+    <img src="_img/speech-bubble.svg" alt="Contact Us">
+  </div>
 
-<section id="contact" class="content" style="display: none">
-  <div class="exit button" onclick="contact()">
-    <img src="_img/cross.svg" class="exit">
-  </div>
-  <div class="container-content">
-    <h2>Contact Me</h2>
-    <div class="content">
-      <form action="https://formspree.io/[your email address goes here]" method="post">
-        <table>
-          <tr>
-            <th><label for="contact-name">Your Name</label></th>
-            <th><input id="contact-name" placeholder="name" type="text" name="contact-name" class="text"></th>
-          </tr>
-          <tr>
-            <th><label for="contact-email">Your email address</label></th>
-            <th><input id="contact-email" placeholder="email address" type="email" name="contact-email" class="text"></th>
-          </tr>
-          <tr>
-            <th><label for="contact-phone">Your phone number</label></th>
-            <th><input id="contact-phone" placeholder="phone number" type="tel" name="contact-phone" class="text"></th>
-          </tr>
-        </table>
-        <p>
-          <textarea placeholder="Your Message" id="contact-message" name="contact-message" class="text" cols="30" rows="1" onkeyup="AutoGrowTextArea(this)"></textarea>
-        </p>
-        <p><input type="submit" class="button" value="Send" style="color: white;" /> </p>
-      </form>
+  <section id="contact" class="content" style="display: none">
+    <div class="exit button" onclick="contact()">
+      <img src="_img/cross.svg" class="exit" alt="Exit">
     </div>
-  </div>
-</section>
-<div class="content">
+    <div class="container-content">
+      <h2>Contact Me</h2>
+      <div class="content">
+        <form action="https://formspree.io/jordan@email.com" method="post">
+          <table>
+            <tr>
+              <th><label for="contact-name">Your Name</label></th>
+              <th><input id="contact-name" placeholder="name" type="text" name="contact-name" class="text"></th>
+            </tr>
+            <tr>
+              <th><label for="contact-email">Your email address</label></th>
+              <th><input id="contact-email" placeholder="email address" type="email" name="contact-email" class="text"></th>
+            </tr>
+            <tr>
+              <th><label for="contact-phone">Your phone number</label></th>
+              <th><input id="contact-phone" placeholder="phone number" type="tel" name="contact-phone" class="text"></th>
+            </tr>
+          </table>
+          <p>
+            <textarea placeholder="Your Message" id="contact-message" name="contact-message" class="text" cols="30"
+              rows="1" onkeyup="AutoGrowTextArea(this)"></textarea>
+          </p>
+          <p><input type="submit" class="button" value="Send" style="color: white;" /> </p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="content">
     <i>CA106: Web Design Project - Group 36 Due Date: 14th December at 23:55.</i>
   </div>
-</div>
 
-<script type="text/javascript">
-// Auto-Grow-TextArea script.
-// Script copyright (C) 2011 www.cryer.co.uk.
-// Script is free to use provided this copyright header is included.
-function AutoGrowTextArea(textField){
-  if (textField.clientHeight < textField.scrollHeight){
-    textField.style.height = textField.scrollHeight + "px";
-    if (textField.clientHeight < textField.scrollHeight){
-      textField.style.height = (textField.scrollHeight * 2 - textField.clientHeight) + "px";
-}}}
-// toggle visiblity of items based on id
-function toggle(id) {
-  var x = document.getElementById(id);
-  up = x.style.display === "none";
-  x.style.display = up? "block" : "none";
-}
-function contact(){
-  toggle("contact");
-  toggle("contact-button");
-}
-/* slideshow scripts*/
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
+  <script type="text/javascript">
+    // Auto-Grow-TextArea script.
+    // Script copyright (C) 2011 www.cryer.co.uk.
+    // Script is free to use provided this copyright header is included.
+    function AutoGrowTextArea(textField) {
+      if (textField.clientHeight < textField.scrollHeight) {
+        textField.style.height = textField.scrollHeight + "px";
+        if (textField.clientHeight < textField.scrollHeight) {
+          textField.style.height = (textField.scrollHeight * 2 - textField.clientHeight) + "px";
+        }
+      }
+    }
+    // toggle visiblity of items based on id
+    function toggle(id) {
+      var x = document.getElementById(id);
+      up = x.style.display === "none";
+      x.style.display = up ? "block" : "none";
+    }
+    function contact() {
+      toggle("contact");
+      toggle("contact-button");
+    }
+  </script>
+  <script src="slides.js"></script>
 </body>
 
 </html>

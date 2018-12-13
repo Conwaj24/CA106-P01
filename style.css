@@ -55,7 +55,6 @@ body {
   max-width: 700px;
   margin: auto;
   padding: 1em;
-  text-indent: 1em;
 }
 h1 {
   /* We spent effort looking for compatible colors for the background.*/
@@ -136,12 +135,19 @@ td .button{
   font-style: italic;
   padding: 0;
 }
-
+.centered-list {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.centered-title {
+  text-align: center;
+}
 section.content {
   background-color: var(--content);
   border: var(--border);
   margin: 1em;
-  padding: 1em;
+  padding: 3em 2em;
 }
 .cite-author {
   padding: 1em;
@@ -155,7 +161,10 @@ section.content {
   margin-bottom: 3em;
   padding-right: 1em;
   text-align: center;
-  height: 32px;
+  height: 3em;
+}
+.nav a {
+  margin: 0.5em 1em;
 }
 /*forms */
 form {
@@ -300,13 +309,30 @@ div.desc {
 /*#region slideshow*/
 * {box-sizing:border-box}
 
-.slideshow-container {
+.slideshow-container img {
   max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slideshow-container h2{
+  text-align: center;
+}
+.slideshow-container {
   position: relative;
   margin: auto;
 }
 .mySlides {
   display: none;
+}
+.mySlides img {
+  width: 100%;
+}
+.mySlides .caption {
+  text-align: center;
 }
 .flex-container {
   justify-content: center;
@@ -314,17 +340,16 @@ div.desc {
   flex-direction: row;
 }
 #prev, #next {
-  opacity: 0.8;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   transition: 0.2s ease;
   border-radius: 32px 0px 0px 32px;
-
+  color: black;
   user-select: none;
 }
 #next {

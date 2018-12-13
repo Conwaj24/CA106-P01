@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Group Portfolio CA106</title>
+</head>
+
+<body>
+  <h1>Contact & Information</h1>
+
+  <section class="content">
+    <h3 id="css-contributions">CSS Contributions</h3>
+    <h4>Brendan Mannion</h4>
+    <p>
+      Wrote the base CSS that was then evolved and improved upon by other members
+    </p>
+    <h4>Maciej Swierad</h4>
+    <p>
+      Worked on deciding and implementing a clear color palette of suitable contrast to be applied uniformly across all
+      elements.
+    </p>
+    <h4>Jordan Conway McLaughlin</h4>
+    <p>
+      Wrote the flexbox-based navbar and the floating contact form.
+    </p>
+    <h4>Gytis Daujotas</h4>
+    <p>
+      Unifying the application of CSS to all pages to ensure consistency, and adding code to ensure clean and proper
+      typography.
+    </p>
+    <h4>Kevin Daniel Andrei</h4>
+    <p>
+      Wrote the CSS to ensure image galleries work. Helped with unification and standardisation.
+    </p>
+  </section>
+
+  <section class="content">
+    <h3 id="mistakes">Mistakes</h3>
+    <h4>Brendan Mannion</h4>
+    <ol>
+      <li>
+        Mistake one.
+      </li>
+      <li>
+        Mistake two.
+      </li>
+    </ol>
+    <h4>Maciej Swierad</h4>
+    <ol>
+      <li>
+        Mistake one.
+      </li>
+      <li>
+        Mistake two.
+      </li>
+    </ol>
+    <h4>Jordan Conway McLaughlin</h4>
+    <ol>
+      <li>
+        Mistake one.
+      </li>
+      <li>
+        Mistake two.
+      </li>
+    </ol>
+    <h4>Gytis Daujotas</h4>
+    <ol>
+      <li>
+        Tried to unify the pages too early without considering the pros and cons of the suggested approach.
+      </li>
+      <li>
+        Imported too many font weights and styles that were unnecessary from Google Fonts.
+      </li>
+    </ol>
+    <h4>Kevin Daniel Andrei</h4>
+    <ol>
+      <li>
+        Kevin Daniel Andrei does not make mistakes.
+      </li>
+      <li>
+        He only makes happy accidents.
+      </li>
+    </ol>
+  </section>
+
+  <section class="content">
+    <h3 id="mistakes">Contact</h3>
+    <p>
+      If you'd like to contact us, please open the floating contact circle to the right.
+    </p>
+  </section>
+
+  <div class="button" id="contact-button" onclick="contact()">
+    <img src="_img/speech-bubble.svg">
+  </div>
+
+  <section id="contact" class="content" style="display: none">
+    <div class="exit button" onclick="contact()">
+      <img src="_img/cross.svg" class="exit">
+    </div>
+    <div class="container-content">
+      <h2>Contact Me</h2>
+      <div class="content">
+        <form action="https://formspree.io/[your email address goes here]" method="post">
+          <table>
+            <tr>
+              <th><label for="contact-name">Your Name</label></th>
+              <th><input id="contact-name" placeholder="name" type="text" name="contact-name" class="text"></th>
+            </tr>
+            <tr>
+              <th><label for="contact-email">Your email address</label></th>
+              <th><input id="contact-email" placeholder="email address" type="email" name="contact-email" class="text"></th>
+            </tr>
+            <tr>
+              <th><label for="contact-phone">Your phone number</label></th>
+              <th><input id="contact-phone" placeholder="phone number" type="tel" name="contact-phone" class="text"></th>
+            </tr>
+          </table>
+          <p>
+            <textarea placeholder="Your Message" id="contact-message" name="contact-message" class="text" cols="30"
+              rows="1" onkeyup="AutoGrowTextArea(this)"></textarea>
+          </p>
+          <p><input type="submit" class="button" value="Send" style="color: white;" /> </p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="content">
+    <i>CA106: Web Design Project - Group 36 Due Date: 14th December at 23:55.</i>
+  </div>
+  </div>
+
+  <script type="text/javascript">
+    // Auto-Grow-TextArea script.
+    // Script copyright (C) 2011 www.cryer.co.uk.
+    // Script is free to use provided this copyright header is included.
+    function AutoGrowTextArea(textField) {
+      if (textField.clientHeight < textField.scrollHeight) {
+        textField.style.height = textField.scrollHeight + "px";
+        if (textField.clientHeight < textField.scrollHeight) {
+          textField.style.height = (textField.scrollHeight * 2 - textField.clientHeight) + "px";
+        }
+      }
+    }
+    // toggle visiblity of items based on id
+    function toggle(id) {
+      var x = document.getElementById(id);
+      up = x.style.display === "none";
+      x.style.display = up ? "block" : "none";
+    }
+    function contact() {
+      toggle("contact");
+      toggle("contact-button");
+    }
+    /* slideshow scripts*/
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@ It was due to this solid engineering, that this building had stayed relatively u
 
 ## Construction:
 
-####  BC - 250 BC
+####  210 BC - 250 BC
 
 We are unsure as to a lot of features concerning the Lighthouse of Alexandria, but we do know what it looked like. As an icon of Alexandria, its likeness appeared in many places, including on ancient coins.
 

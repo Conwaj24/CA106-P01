@@ -2,33 +2,192 @@
 <html>
 
 <head>
-    <title>Gallery</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <title>Gallery</title>
 </head>
 
-<body>
-    <header>
-        <h1>The Colossus of Rhodes: Gallery</h1>
-        <div class="nav">
-            <a href="index.html" style="float: left">Back</a>
-            <a href="gallery.html" style="float: right">Gallery</a>
-            <a href="death.html" style="float: right">Death</a>
-            <a href="life.html" style="float: right">Life</a>
-            <a href="birth.html" style="float: right">Birth</a>
-        </div>
-    </header>
-    <section class="content">
-        <div class="slideshow-container">
-            <h2>Image Gallery</h2>
-            <div class="mySlides fade">
-                <img src="MaH/img/relief0.jpg" alt="An image of the mausoleum.">
-                <p class="caption">Please put your images in</p>
-            </div>
-            <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a id="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-    </section>
-    <script src="../slides.js"></script>
+<header>
+    <h1>Gallery</h1>
+    <div class="nav flex-container">
+        <a href="../index.html" class="button">Home</a>
+        <a href="index.html" class="button">Introduction</a>
+        <a href="1.html" class="button">Construction</a>
+        <a href="2.html" class="button">Life</a>
+        <a href="3.html" class="button">Destruction</a>
+        <a href="gallery.html" class="button active">Gallery</a>
+    </div>
+</header>
+
+<body style="max-width:100vw;">
+  <section id="&article&-images" class="gallery content" role="responsive" width="50%">
+    <div class="content row">
+      <div class="column">
+  <img src="img/cor.jpg" onclick="lightbox('lightbox-cor')">
+<img src="img/galleryCor1.jpg" onclick="lightbox('lightbox-galleryCor1')">
+</div>
+<div class="column">
+  <img src="img/cor2.jpg" onclick="lightbox('lightbox-cor2')">
+<img src="img/galleryCor2.png" onclick="lightbox('lightbox-galleryCor2')">
+</div>
+<div class="column">
+  <img src="img/cor3.jpg" onclick="lightbox('lightbox-cor3')">
+<img src="img/galleryCor3.jpg" onclick="lightbox('lightbox-galleryCor3')">
+</div>
+<div class="column">
+  <img src="img/cor4.jpg" onclick="lightbox('lightbox-cor4')">
+<img src="img/galleryCor4.jpg" onclick="lightbox('lightbox-galleryCor4')">
+</div>
+    </div>
+  </section>
+
+  <!-- The Modal/Lightbox -->
+  <div id="lightbox" style="display:none;">
+  
+    <div class="modal-content" id="lightbox-cor" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-cor')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">1/ 8</div>
+        <img src="img/cor.jpg" style="height:100%">
+    </div>
+
+        <a class="next button" onclick="swapNext('lightbox-cor')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-cor2" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-cor2')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">2/ 8</div>
+        <img src="img/cor2.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-cor2')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-cor2')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-cor3" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-cor3')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">3/ 8</div>
+        <img src="img/cor3.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-cor3')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-cor3')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-cor4" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-cor4')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">4/ 8</div>
+        <img src="img/cor4.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-cor4')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-cor4')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-galleryCor1" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-galleryCor1')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">5/ 8</div>
+        <img src="img/galleryCor1.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-galleryCor1')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-galleryCor1')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-galleryCor2" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-galleryCor2')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">6/ 8</div>
+        <img src="img/galleryCor2.png" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-galleryCor2')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-galleryCor2')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-galleryCor3" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-galleryCor3')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">7/ 8</div>
+        <img src="img/galleryCor3.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-galleryCor3')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-galleryCor3')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-galleryCor4" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-galleryCor4')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">8/ 8</div>
+        <img src="img/galleryCor4.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-galleryCor4')">&#10094;</a>    
+    <div class="caption-container">
+        <p>
+            
+        </p>
+    </div>
+</div>    
+  </div>
+
+  <footer class="nav flex-container">
+      <a href="3.html" class="button">Back</a>
+      <a href="../index.html" class="button">Next</a>
+  </footer>
+
+  <script src="../toggle.js"></script>
 </body>
 
 </html>

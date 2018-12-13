@@ -56,16 +56,20 @@ def empty_matrix(x=0, y=0):
         i += 1
     return out
 
+def img_id(img):
+    return 'lightbox-' + img.split('.')[0]
+
 gallery = read_file('gallery.html')
 column = read_file('column.html')
 img = read_file('img.html')
+lightbox = read_file('lightbox.html')
 imgs = listdir('../'+article+'/img')
 
 imgsets = empty_matrix(columns)
-imgsets[0].append(replace(img, '&src', 'img/'+imgs[0]))
-i = 1
+i = 0
 while i < len(imgs):
     img_i = replace(img, '&src', 'img/'+imgs[i])
+    img_i = replace(img_i, '&id', img_id(imgs[i]))
     imgsets[i % columns].append(img_i)
     i += 1
 
@@ -78,6 +82,16 @@ for a in imgsets:
         False)
 
 html = replace(gallery, '&column', columnset, False)
+
+lightboxset = ''
+for i in range(len(imgs)):
+    lb = replace(lightbox, '&id', img_id(imgs[i]))
+    lb = replace(lb, '&indx', str(i+1), False)
+    lb = replace(lb, '&len', str(len(imgs)), False)
+    lb = replace(lb, '&src', 'img/'+imgs[i])
+    lightboxset += lb
+
+html = replace(html, '&lightbox', lightboxset, False)
 
 with open('../'+article+'/gallery.html', 'w') as f:
     f.write(html)

@@ -10,7 +10,7 @@ function swap(id0, id1){
     toggle(id1);
 }
 function swapNext(id){
-    var x = document.getElementById(id).nextSibling;
+    var x = document.getElementById(id).nextSibling.div;
     toggle(id);
     x.style.display = "block";
 }
@@ -22,4 +22,8 @@ function swapPrev(id){
  // toggle contact form visibility
 function contact() {
     swap("contact", "contact-button");
+}
+// toggle visibility of specific lightbox slide
+function lightbox(id) {
+    swap('lightbox', id);
 }

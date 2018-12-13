@@ -1,11 +1,15 @@
-<div class="modal-content" id="&id">
+<div class="modal-content" id="&id" style="display:none;">
     
-    <div class="mySlides">
-        <div class="numbertext">&indx / &len</div>
+    <div class="exit button" onclick="toggle('lightbox')">
+        <img src="../_img/cross.svg" class="exit">
+    </div>
+    
+    <div>
+        <div class="numbertext">&indx / &len </div>
         <img src="&src" style="width:100%">
     </div>
 
-    <a class="prev button" onclick="swapNext('&id')">&#10094;</a>
+    <a class="prev button" onclick="swapPrev('&id')">&#10094;</a>
     <a class="next button" onclick="swapNext('&id')">&#10095;</a>
 
     <div class="caption-container">

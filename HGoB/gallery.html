@@ -2,37 +2,218 @@
 <html>
 
 <head>
-    <title>Gallery</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Gallery</title>
 </head>
 
-<body>
-    <header>
-        <h1>The Hanging Gardens of Babylon: Gallery</h1>
-        <div class="nav">
-            <a href="index.html" style="float: left">Back</a>
-            <a href="gallery.html" style="float: right">Gallery</a>
-            <a href="death.html" style="float: right">Death</a>
-            <a href="life.html" style="float: right">Life</a>
-            <a href="birth.html" style="float: right">Birth</a>
-        </div>
-    </header>
-    <section class="content">
-        <div class="slideshow-container">
-            <h2>Image Gallery</h2>
-            <div class="mySlides fade">
-                <img src="img/1.png" alt="An image of a great pyramid.">
-                <p class="caption">An image of a great pyramid.</p>
+<header>
+    <h1>Gallery</h1>
+    <div class="nav flex-container">
+        <a href="../index.html" class="button">Home</a>
+        <a href="index.html" class="button">Introduction</a>
+        <a href="1.html" class="button">Construction</a>
+        <a href="2.html" class="button">Life</a>
+        <a href="3.html" class="button">Destruction</a>
+        <a href="gallery.html" class="button active">Gallery</a>
+    </div>
+</header>
+
+<body style="max-width:100vw;">
+    <section id="&article&-images" class="gallery content" role="responsive" width="50%">
+        <div class="content row">
+            <div class="column">
+                <img src="img/6.jpg" onclick="lightbox('lightbox-6')">
+                <img src="img/9.jpg" onclick="lightbox('lightbox-9')">
+                <img src="img/7.jpg" onclick="lightbox('lightbox-7')">
             </div>
-            <div class="mySlides fade">
-                <img src="img/2.jpg" alt="An image of the hanging gardens of Babylon">
-                <p class="caption">An image of the hanging gardens of Babylon</p>
+            <div class="column">
+                <img src="img/2.jpg" onclick="lightbox('lightbox-2')">
+                <img src="img/1.png" onclick="lightbox('lightbox-1')">
             </div>
-            <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a id="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="column">
+                <img src="img/3.jpg" onclick="lightbox('lightbox-3')">
+                <img src="img/5.jpg" onclick="lightbox('lightbox-5')">
+            </div>
+            <div class="column">
+                <img src="img/4.jpg" onclick="lightbox('lightbox-4')">
+                <img src="img/8.jpg" onclick="lightbox('lightbox-8')">
+            </div>
         </div>
     </section>
-    <script src="../slides.js"></script>
+
+    <!-- The Modal/Lightbox -->
+    <div id="lightbox" style="display:none;">
+
+        <div class="modal-content" id="lightbox-6" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-6')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">1/ 9</div>
+                <img src="img/6.jpg" style="height:100%">
+            </div>
+
+            <a class="next button" onclick="swapNext('lightbox-6')">&#10095;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="modal-content" id="lightbox-2" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-2')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">2/ 9</div>
+                <img src="img/2.jpg" style="height:100%">
+            </div>
+
+            <a class="prev button" onclick="swapPrev('lightbox-2')">&#10094;</a> <a class="next button" onclick="swapNext('lightbox-2')">&#10095;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="modal-content" id="lightbox-3" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-3')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">3/ 9</div>
+                <img src="img/3.jpg" style="height:100%">
+            </div>
+
+            <a class="prev button" onclick="swapPrev('lightbox-3')">&#10094;</a> <a class="next button" onclick="swapNext('lightbox-3')">&#10095;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="modal-content" id="lightbox-4" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-4')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">4/ 9</div>
+                <img src="img/4.jpg" style="height:100%">
+            </div>
+
+            <a class="prev button" onclick="swapPrev('lightbox-4')">&#10094;</a> <a class="next button" onclick="swapNext('lightbox-4')">&#10095;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="modal-content" id="lightbox-9" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-9')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">5/ 9</div>
+                <img src="img/9.jpg" style="height:100%">
+            </div>
+
+            <a class="prev button" onclick="swapPrev('lightbox-9')">&#10094;</a> <a class="next button" onclick="swapNext('lightbox-9')">&#10095;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="modal-content" id="lightbox-1" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-1')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">6/ 9</div>
+                <img src="img/1.png" style="height:100%">
+            </div>
+
+            <a class="prev button" onclick="swapPrev('lightbox-1')">&#10094;</a> <a class="next button" onclick="swapNext('lightbox-1')">&#10095;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="modal-content" id="lightbox-5" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-5')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">7/ 9</div>
+                <img src="img/5.jpg" style="height:100%">
+            </div>
+
+            <a class="prev button" onclick="swapPrev('lightbox-5')">&#10094;</a> <a class="next button" onclick="swapNext('lightbox-5')">&#10095;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="modal-content" id="lightbox-8" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-8')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">8/ 9</div>
+                <img src="img/8.jpg" style="height:100%">
+            </div>
+
+            <a class="prev button" onclick="swapPrev('lightbox-8')">&#10094;</a> <a class="next button" onclick="swapNext('lightbox-8')">&#10095;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="modal-content" id="lightbox-7" style="display:none;">
+
+            <div class="exit button" onclick="lightbox('lightbox-7')">
+                <img src="../_img/cross.svg">
+            </div>
+
+            <div class="modal-content">
+                <div class="numbertext">9/ 9</div>
+                <img src="img/7.jpg" style="height:100%">
+            </div>
+
+            <a class="prev button" onclick="swapPrev('lightbox-7')">&#10094;</a>
+            <div class="caption-container">
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="nav flex-container">
+        <a href="3.html" class="button">Back</a>
+        <a href="../index.html" class="button">Next</a>
+    </footer>
+
+    <script src="../toggle.js"></script>
 </body>
 
 </html>

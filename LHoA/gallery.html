@@ -2,42 +2,156 @@
 <html>
 
 <head>
-    <title>Gallery</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <title>Gallery</title>
 </head>
 
-<body>
-    <header>
-        <h1>The Lighthouse of Alexandria: Gallery</h1>
-        <div class="nav">
-            <a href="index.html" style="float:left">Back</a>
-            <a href="gallery.html" style="float: right">Gallery</a>
-            <a href="destruction.html" style="float: right">Destruction</a>
-            <a href="purpose.html" style="float: right">Purpose</a>
-            <a href="architecture.html" style="float: right">Architecture</a>
-        </div>
-    </header>
-    <section class="content">
-        <div class="slideshow-container">
-            <h2>Image Gallery</h2>
-            <div class="mySlides fade">
-                <img src="LHoA/img/purpose.png" alt="The Lighthouse of Alexandria">
-                <p class="caption">The Lighthouse of Alexandria</p>
-            </div>
-            <div class="mySlides fade">
-                <img src="LHoA/img/architecture.jpg" alt="An image of the inside of the structure.">
-                <p class="caption">An image of the inside of the structure.</p>
-            </div>
-            <div class="mySlides fade">
-                <img src="LHoA/img/ruins.jpg" alt="An image of the lighthouse architecture.">
-                <p class="caption">An image of the lighthouse architecture.</p>
-            </div>
+<header>
+    <h1>Gallery</h1>
+    <div class="nav flex-container">
+        <a href="../index.html" class="button">Home</a>
+        <a href="index.html" class="button">Introduction</a>
+        <a href="1.html" class="button">Construction</a>
+        <a href="2.html" class="button">Life</a>
+        <a href="3.html" class="button">Destruction</a>
+        <a href="gallery.html" class="button active">Gallery</a>
+    </div>
+</header>
 
-            <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a id="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-    </section>
-    <script src="../slides.js"></script>
+<body style="max-width:100vw;">
+  <section id="&article&-images" class="gallery content" role="responsive" width="50%">
+    <div class="content row">
+      <div class="column">
+  <img src="img/architecture.jpg" onclick="lightbox('lightbox-architecture')">
+<img src="img/purpose.png" onclick="lightbox('lightbox-purpose')">
+</div>
+<div class="column">
+  <img src="img/book-of-wonders.jpg" onclick="lightbox('lightbox-book-of-wonders')">
+<img src="img/ruins.jpg" onclick="lightbox('lightbox-ruins')">
+</div>
+<div class="column">
+  <img src="img/main.png" onclick="lightbox('lightbox-main')">
+</div>
+<div class="column">
+  <img src="img/mosaic.jpg" onclick="lightbox('lightbox-mosaic')">
+</div>
+    </div>
+  </section>
+
+  <!-- The Modal/Lightbox -->
+  <div id="lightbox" style="display:none;">
+  
+    <div class="modal-content" id="lightbox-architecture" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-architecture')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">1/ 6</div>
+        <img src="img/architecture.jpg" style="height:100%">
+    </div>
+
+        <a class="next button" onclick="swapNext('lightbox-architecture')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            A picture of the architecture of the Lighthouse of Alexandria.
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-book-of-wonders" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-book-of-wonders')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">2/ 6</div>
+        <img src="img/book-of-wonders.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-book-of-wonders')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-book-of-wonders')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            The lighthouse as depicted in the Book of Wonders, a late 14th century Arabic text.
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-main" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-main')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">3/ 6</div>
+        <img src="img/main.png" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-main')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-main')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            A picture of the Lighthouse of Alexandria.
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-mosaic" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-mosaic')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">4/ 6</div>
+        <img src="img/mosaic.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-mosaic')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-mosaic')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            A mosaic depicting the Pharos of Alexandria, from Olbia, Libya.
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-purpose" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-purpose')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">5/ 6</div>
+        <img src="img/purpose.png" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-purpose')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-purpose')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            A picture of the purpose of the Lighthouse of Alexandria.
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-ruins" style="display:none;">
+    
+    <div class="exit button" onclick="lightbox('lightbox-ruins')">
+        <img src="../_img/cross.svg">
+    </div>
+    
+    <div class="modal-content">
+        <div class="numbertext">6/ 6</div>
+        <img src="img/ruins.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-ruins')">&#10094;</a>    
+    <div class="caption-container">
+        <p>
+            A picture of the ruins of the Lighthouse of Alexandra.
+        </p>
+    </div>
+</div>    
+  </div>
+
+  <footer class="nav flex-container">
+      <a href="3.html" class="button">Back</a>
+      <a href="../index.html" class="button">Next</a>
+  </footer>
+
+  <script src="../toggle.js"></script>
 </body>
 
 </html>

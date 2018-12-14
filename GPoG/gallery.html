@@ -2,37 +2,238 @@
 <html>
 
 <head>
-    <title>Gallery</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <title>Gallery</title>
 </head>
 
-<body>
-    <header>
-        <h1>The Great Pyramid of Giza: Gallery</h1>
-        <div class="nav">
-            <a href="../index.html" style="float: left">Home</a>
-            <a href="gallery.html" style="float: right">Gallery</a>
-            <a href="now.html" style="float: right">Now</a>
-            <a href="purpose.html" style="float: right">Purpose</a>
-            <a href="construction.html" style="float: right">Construction</a>
-        </div>
-    </header>
-    <section class="content">
-        <div class="slideshow-container">
-            <h2>Image Gallery</h2>
-            <div class="mySlides fade">
-                <img src="GPoG/img/construction.jpg" alt="A picture showing the purpose of the Lighthouse of Alexandria.">
-                <p class="caption">A picture showing the purpose of the Lighthouse of Alexandria.</p>
-            </div>
-            <div class="mySlides fade">
-                <img src="GPoG/img/main.png" alt="A picture showing historic construction.">
-                <p class="caption">A picture showing historic construction.</p>
-            </div>
-            <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a id="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-    </section>
-    <script src="../slides.js"></script>
+<header>
+    <h1>Gallery</h1>
+    <div class="nav flex-container">
+        <a href="../index.html" class="button">Home</a>
+        <a href="index.html" class="button">Introduction</a>
+        <a href="1.html" class="button">Construction</a>
+        <a href="2.html" class="button">Life</a>
+        <a href="3.html" class="button">Now</a>
+        <a href="gallery.html" class="button active">Gallery</a>
+    </div>
+</header>
+
+<body style="max-width:100vw;">
+  <section id="&article&-images" class="gallery content" role="responsive" width="50%">
+    <div class="content row">
+      <div class="column">
+  <img src="img/king.jpg" onclick="lightbox('lightbox-king')">
+<img src="img/main.png" onclick="lightbox('lightbox-main')">
+<img src="img/casing.jpg" onclick="lightbox('lightbox-casing')">
+</div>
+<div class="column">
+  <img src="img/queen.jpg" onclick="lightbox('lightbox-queen')">
+<img src="img/entrance.jpg" onclick="lightbox('lightbox-entrance')">
+<img src="img/tourists.jpg" onclick="lightbox('lightbox-tourists')">
+</div>
+<div class="column">
+  <img src="img/gallery.jpg" onclick="lightbox('lightbox-gallery')">
+<img src="img/khufu.jpg" onclick="lightbox('lightbox-khufu')">
+</div>
+<div class="column">
+  <img src="img/inside.png" onclick="lightbox('lightbox-inside')">
+<img src="img/construction.jpg" onclick="lightbox('lightbox-construction')">
+</div>
+    </div>
+  </section>
+
+  <!-- The Modal/Lightbox -->
+  <div id="lightbox" style="display:none;">
+
+    <div class="modal-content" id="lightbox-king" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-king')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">1/ 10</div>
+        <img src="img/king.jpg" style="height:100%">
+    </div>
+
+        <a class="next button" onclick="swapNext('lightbox-king')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            A picture of the inside of the King's chamber.
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-queen" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-queen')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">2/ 10</div>
+        <img src="img/queen.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-queen')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-queen')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            A picture of the inside of the Queen's chamber.
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-gallery" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-gallery')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">3/ 10</div>
+        <img src="img/gallery.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-gallery')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-gallery')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            The Grand Gallery, which connects several passageways within the pyramid.
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-inside" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-inside')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">4/ 10</div>
+        <img src="img/inside.png" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-inside')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-inside')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            A diagram illustrating the complex layout within the pyramid, alongside the <a href="https://news.nationalgeographic.com/2017/11/great-pyramid-giza-void-discovered-khufu-archaeology-science">void</a>.
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-main" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-main')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">5/ 10</div>
+        <img src="img/main.png" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-main')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-main')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            Artist's painted depiction of The Great Pyramid of Giza
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-entrance" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-entrance')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">6/ 10</div>
+        <img src="img/entrance.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-entrance')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-entrance')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            The main entrance of the pyramid, which is also known as the modern entrance as a result of <a href="http://anthropology.msu.edu/anp264-ss15/2015/02/11/the-looting-of-the-pyramids/">looting</a>.
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-khufu" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-khufu')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">7/ 10</div>
+        <img src="img/khufu.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-khufu')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-khufu')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            Clay seal bearing the name of Khufu from the pyramid. Currently on display at the <a href="https://www.britannica.com/topic/Louvre-Museum">Musée du Louvre</a>.
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-construction" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-construction')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">8/ 10</div>
+        <img src="img/construction.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-construction')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-construction')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            One of the most theorised methods of the construction of the pyramid.
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-casing" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-casing')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">9/ 10</div>
+        <img src="img/casing.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-casing')">&#10094;</a>    <a class="next button" onclick="swapNext('lightbox-casing')">&#10095;</a>
+    <div class="caption-container">
+        <p>
+            The casing stone of which much of the pyramid was used to build.
+
+        </p>
+    </div>
+</div><div class="modal-content" id="lightbox-tourists" style="display:none;">
+
+    <div class="exit button" onclick="lightbox('lightbox-tourists')">
+        <img src="../_img/cross.svg">
+    </div>
+
+    <div class="modal-content">
+        <div class="numbertext">10/ 10</div>
+        <img src="img/tourists.jpg" style="height:100%">
+    </div>
+
+    <a class="prev button" onclick="swapPrev('lightbox-tourists')">&#10094;</a>
+    <div class="caption-container">
+        <p>
+            Crowds of people queueing up to enter the Great Pyramid of Giza.
+
+        </p>
+    </div>
+</div>
+  </div>
+
+  <footer class="nav flex-container">
+      <a href="3.html" class="button">Back</a>
+      <a href="../index.html" class="button">Next</a>
+  </footer>
+
+  <script src="../toggle.js"></script>
 </body>
 
 </html>
